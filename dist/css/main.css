@@ -1,0 +1,95 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+nav.navbar {
+  height: 6rem;
+  background-color: #fff;
+  padding: 0; }
+  @media only screen and (min-width: 85em) {
+    nav.navbar {
+      min-height: 9.4rem; } }
+  nav.navbar a.navbar-brand img {
+    height: 38px; }
+  nav.navbar .navbar-nav li a {
+    padding: 20px; }
+  nav.navbar button.navbar-toggler,
+  nav.navbar a.navbar-contact {
+    height: 100%;
+    width: 17%; }
+  nav.navbar a.navbar-contact {
+    background-color: #60ad5f;
+    text-align: center; }
+    nav.navbar a.navbar-contact svg {
+      margin-top: 20px; }
+  nav.navbar button.navbar-toggler {
+    background-color: #f1f1ec;
+    border-radius: 0; }
+    nav.navbar button.navbar-toggler span.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  nav.navbar .navbar-collapse {
+    background-color: #f1f1ec;
+    padding: 0; }
+    @media only screen and (min-width: 56.25em) {
+      nav.navbar .navbar-collapse {
+        background-color: #fff; } }
+    nav.navbar .navbar-collapse .dropdown-menu {
+      border: none;
+      border-bottom: 1px solid #e6e6dd;
+      border-radius: 0; }
+
+.top {
+  background-color: #fdfdfd;
+  border: 0.5px solid #e7e5e5; }
+  @media only screen and (min-width: 56.25em) {
+    .top {
+      height: 35px;
+      padding: 1.1rem; } }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (min-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
+
+.top a {
+  font: 400 1.4rem "Roboto", sans-serif;
+  color: #9b9b9b;
+  margin-right: 5rem; }
+
+ul.navbar-nav {
+  font-family: "Roboto", sans-serif; }
+  ul.navbar-nav li.nav-item a {
+    color: #000;
+    font-weight: 400; }
+  ul.navbar-nav li.nav-item.active a {
+    color: #60ad5f;
+    font-weight: 700; }
+
+.navbar-collapse .dropdown-menu a.dropdown-item {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 14px;
+  text-transform: none; }
+  @media only screen and (min-width: 85em) {
+    .navbar-collapse .dropdown-menu a.dropdown-item {
+      font-size: 10px;
+      text-transform: uppercase; } }

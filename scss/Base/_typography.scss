@@ -1,0 +1,38 @@
+// ------------ TOP -----------------
+.top {
+  a {
+    font: 400 1.4rem $main-font;
+    color: #9b9b9b;
+    margin-right: 5rem;
+  }
+}
+
+// ------------ NAVBAR -----------------
+ul.navbar-nav {
+  font-family: $main-font;
+  li.nav-item {
+    a {
+      color: #000;
+      font-weight: 400;
+    }
+    &.active {
+      a {
+        color: $main-green;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.navbar-collapse {
+  .dropdown-menu {
+    a.dropdown-item {
+      color: rgba(0, 0, 0, 0.61);
+      font-size: 14px;
+      text-transform: none;
+      @include respond('desktop') {
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

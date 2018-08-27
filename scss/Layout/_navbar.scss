@@ -1,0 +1,86 @@
+nav.navbar {
+  height: 6rem;
+  background-color: #fff;
+  padding: 0;
+  @include respond('desktop') {
+    min-height: 9.4rem;
+  }
+  a.navbar-brand img {
+    height: 38px;
+  }
+  .navbar-nav li a {
+    // height: 60px;
+    // line-height: 60px;
+    padding: 20px;
+    // :last-child {
+    //   margin-bottom: 20px;
+    // }
+  }
+  button.navbar-toggler,
+  a.navbar-contact {
+    height: 100%;
+    width: 17%;
+  }
+  a.navbar-contact {
+    background-color: $main-green;
+    text-align: center;
+    svg {
+      margin-top: 20px;
+    }
+  }
+  button.navbar-toggler {
+    background-color: $bone;
+    border-radius: 0;
+    span.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+  .navbar-collapse {
+    background-color: $bone;
+    @include respond('tab-port') {
+      background-color: #fff;
+    }
+    padding: 0;
+    .dropdown-menu {
+      border: none;
+      border-bottom: 1px solid #e6e6dd;
+      border-radius: 0;
+    }
+  }
+}
+
+// nav.navbar {
+//   background-color: #fff;
+//   min-height: 60px;
+//   padding: 0 !important; // quitar en desktop
+//   a.navbar-brand,
+//   .navbar-nav li a {
+//     height: 60px;
+//     line-height: 60px;
+//   }
+//   button.navbar-toggler,
+//   a.navbar-contact {
+//     height: 100%;
+//     width: 17%;
+//   }
+//   button.navbar-toggler {
+//     background-color: $bone;
+//     border: none;
+//     font-size: 2.25em;
+
+//     span.navbar-toggler-icon {
+//       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+//     }
+//   }
+//   a.navbar-contact {
+//     background-color: $main-green;
+//     text-align: center;
+//     svg {
+//       margin-top: 20px;
+//     }
+//   }
+//   .navbar-collapse.collapse.show {
+//     background-color: $bone;
+//     padding: 30px;
+//   }
+// }
