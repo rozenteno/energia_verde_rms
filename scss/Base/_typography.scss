@@ -1,3 +1,13 @@
+// ------------ TYPES OF HEADING -----------------
+.heading--primary {
+  font: 400 2.4rem $main-font;
+  text-align: center;
+  @include respond('desktop') {
+    font-size: 3.2rem;
+    margin-bottom: 127px;
+  }
+}
+
 // ------------ TOP -----------------
 .top {
   a {
@@ -14,6 +24,10 @@ ul.navbar-nav {
     a {
       color: #000;
       font-weight: 400;
+      &:hover {
+        font-weight: 700;
+        color: $text-dark;
+      }
     }
     &.active {
       a {
@@ -25,14 +39,198 @@ ul.navbar-nav {
 }
 .navbar-collapse {
   .dropdown-menu {
+    @include respond('desktop') {
+      text-align: center;
+    }
     a.dropdown-item {
       color: rgba(0, 0, 0, 0.61);
       font-size: 14px;
       text-transform: none;
+      font-family: $main-font;
+      &:focus {
+        background-color: $nav-dropdown;
+      }
       @include respond('desktop') {
         font-size: 10px;
         text-transform: uppercase;
+        font-weight: 700;
+        color: $text-dark;
+        // margin-top: 20px;
       }
+    }
+    &.articles {
+      @include respond('desktop') {
+        text-align: right;
+      }
+    }
+  }
+}
+
+//------------ HERO SIDEBAR -----------------
+.hero-sidebar {
+  font-family: $main-font;
+  z-index: 4;
+  color: #8df58b;
+  span {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    margin-left: -14px;
+    font-size: 18px;
+    @include respond('desktop') {
+      margin-left: -15px;
+      font-size: 22px;
+    }
+  }
+}
+
+//------------ ITEM CONTAINER -----------------
+.item__container {
+  &--heading {
+    font: 700 2.6rem $main-font;
+    color: #fff;
+    @include respond('tab-port') {
+      font-size: 60px;
+      padding-right: 500px;
+    }
+    @include respond('desktop') {
+      padding-right: 700px;
+      font-size: 65px;
+    }
+  }
+  &--text {
+    font: 400 1.2rem $secondary-font;
+    color: #fff;
+    margin-left: 20px;
+    @include respond('tab-port') {
+      font-size: 1.6rem;
+      max-width: 550px;
+    }
+    @include respond('desktop') {
+      max-width: 500px;
+      font-size: 13px;
+    }
+  }
+}
+
+//------------ BUTTONS -----------------
+.btn-text-white {
+  text-transform: uppercase;
+  color: #fff;
+  font: 700 10px $secondary-font;
+  @include respond('tab-port') {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+}
+
+//------------ MAIN PARAGRAPH -----------------
+.main-paragraph {
+  font: 400 14px/2 $secondary-font;
+  @include respond('desktop') {
+    font-size: 16px;
+  }
+  span {
+    font-size: 22px;
+  }
+}
+
+//------------ SOLUTIONS SECTION -----------------
+.solutions {
+  &__container {
+    &--content {
+      p {
+        // height: 102.5px;
+      }
+      font: 400 1.6rem/2 $secondary-font;
+      color: #666666;
+      span {
+        color: #000;
+      }
+      button.btn-solutions {
+        font-weight: 700;
+        color: #42464b;
+      }
+    }
+  }
+}
+
+//------------ MODAL -----------------
+.modal-body {
+  &__title {
+    h1 {
+      font: 700 3.2rem $main-font;
+      text-transform: uppercase;
+      color: #42464b;
+      margin-bottom: 30px;
+    }
+    a {
+      font: 700 2.1rem $main-font;
+      color: #42464b;
+      margin-top: 25px;
+      i {
+        color: $main-green;
+        font-size: 12px;
+      }
+    }
+  }
+  &__content {
+    p {
+      font: 700 2.5rem $secondary-font;
+      color: #42464b;
+    }
+    li {
+      font: 400 1.6rem/1.7 $secondary-font;
+      color: #42464b;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  p.modal-body__content--2 {
+    font: 400 1.8rem/1.7 $secondary-font;
+    color: #42464b;
+  }
+}
+
+//------------ MOTTO -----------------
+.motto {
+  &__content {
+    h1 {
+      font: 400 2.4rem $main-font;
+      color: #42464b;
+      @include respond('tab-port') {
+        font-size: 3.6rem;
+      }
+    }
+    p {
+      font: 400 1.5rem/2 $secondary-font;
+      color: #42464b;
+      @include respond('tab-port') {
+        font-size: 1.6rem;
+      }
+      span {
+        color: #000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+//------------ SOLUTIONS -----------------
+
+.solutions {
+  &__heading {
+    font: 700 3.6rem $main-font;
+    color: #42464b;
+  }
+  &__content {
+    margin-top: 3rem;
+    font: 400 1.6rem/2 $secondary-font;
+    color: #42464b;
+    a {
+      color: $main-green;
     }
   }
 }

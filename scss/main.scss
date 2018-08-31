@@ -1,8 +1,17 @@
 @import 'Abstracts/variables.scss';
 @import 'Abstracts/mixins.scss';
 
+@import 'Components/button.scss';
+
 @import 'Layout/navbar.scss';
 @import 'Layout/top.scss';
+@import 'Layout/sidebar.scss';
+@import 'Layout/hero.scss';
+@import 'Layout/solutions.scss';
+
+@import 'Utilities/helpers.scss';
 
 @import 'Base/base.scss';
 @import 'Base/typography.scss';
+
+@import 'Pages/home.scss';

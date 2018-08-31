@@ -1,0 +1,22 @@
+.vl {
+  border-left: 1px solid #1b4079;
+  height: 9rem;
+  margin-left: 5%;
+  position: relative;
+  margin-top: 2rem;
+  @include respond(desktop) {
+    margin-top: -30px;
+    height: 14rem;
+  }
+}
+.vl--right {
+  border-left: 1px solid #1b4079;
+  height: 9rem;
+  margin-left: 90%;
+  position: relative;
+  margin-top: 2rem;
+  @include respond(desktop) {
+    margin-top: -70px;
+    height: 14rem;
+  }
+}

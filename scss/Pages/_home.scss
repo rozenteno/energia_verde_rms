@@ -1,0 +1,48 @@
+.motto {
+  @include respond('tab-port') {
+    position: relative;
+  }
+  [class*='col-sm-12'] {
+    &:last-child {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  &__image {
+    img {
+      /* [ IMG 021 B ]: */
+      box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+  &__content {
+    background-color: #fafafa;
+    z-index: -1;
+    margin-top: 20px;
+    padding: 40px 15px;
+    @include respond('tab-port') {
+      position: relative;
+      margin-left: -102px;
+      margin-top: -78px;
+      padding: 35px 120px;
+    }
+    @include respond('desktop') {
+      padding: 51px 164px;
+    }
+    hr {
+      border-top: 2px solid $main-green;
+      border-left: 0;
+      border-bottom: 0;
+      border-right: 0;
+      max-width: 30%;
+      text-align: left;
+      margin-right: 240px;
+      margin-bottom: 40px;
+      @include respond('tab-port') {
+        margin-right: 400px;
+      }
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+}

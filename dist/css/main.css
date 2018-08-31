@@ -15,17 +15,57 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+.btn {
+  border: 2px solid #60ad5f;
+  border-radius: 21px;
+  background-color: transparent;
+  height: 40px;
+  width: 188px;
+  transition: all 0.3s; }
+  .btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 700; }
+
+button.btn-solutions {
+  background-color: #fff;
+  border: none;
+  margin-top: 31px;
+  cursor: pointer; }
+  button.btn-solutions:last-child {
+    margin-top: 7px; }
+  button.btn-solutions i {
+    color: #60ad5f; }
+
 nav.navbar {
   height: 6rem;
   background-color: #fff;
-  padding: 0; }
-  @media only screen and (min-width: 85em) {
+  padding: 0;
+  font-size: 1.6rem; }
+  @media only screen and (min-width: 56.25em) {
     nav.navbar {
       min-height: 9.4rem; } }
   nav.navbar a.navbar-brand img {
-    height: 38px; }
+    height: 50px; }
+    @media only screen and (min-width: 56.25em) {
+      nav.navbar a.navbar-brand img {
+        margin-left: 5rem; } }
+    @media only screen and (min-width: 85em) {
+      nav.navbar a.navbar-brand img {
+        margin-left: 9.9rem; } }
+  @media only screen and (min-width: 56.25em) {
+    nav.navbar .navbar-nav {
+      margin-right: 11rem; } }
+  @media only screen and (min-width: 85em) {
+    nav.navbar .navbar-nav {
+      margin-right: 9.9rem; } }
   nav.navbar .navbar-nav li a {
-    padding: 20px; }
+    padding: 20px;
+    margin-right: 4.3rem; }
+    @media only screen and (min-width: 85em) {
+      nav.navbar .navbar-nav li a {
+        height: auto;
+        line-height: 1.5;
+        padding: 4px; } }
   nav.navbar button.navbar-toggler,
   nav.navbar a.navbar-contact {
     height: 100%;
@@ -42,6 +82,7 @@ nav.navbar {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   nav.navbar .navbar-collapse {
     background-color: #f1f1ec;
+    z-index: 99;
     padding: 0; }
     @media only screen and (min-width: 56.25em) {
       nav.navbar .navbar-collapse {
@@ -50,7 +91,60 @@ nav.navbar {
       border: none;
       border-bottom: 1px solid #e6e6dd;
       border-radius: 0; }
+      @media only screen and (min-width: 85em) {
+        nav.navbar .navbar-collapse .dropdown-menu {
+          background-color: #f4f4eb; }
+          nav.navbar .navbar-collapse .dropdown-menu .container {
+            margin-top: 15px; }
+          nav.navbar .navbar-collapse .dropdown-menu a.dropdown-item {
+            display: inline; }
+            nav.navbar .navbar-collapse .dropdown-menu a.dropdown-item:hover {
+              color: #60ad5f;
+              background-color: #f4f4eb; }
+            nav.navbar .navbar-collapse .dropdown-menu a.dropdown-item:active {
+              background-color: #f4f4eb; } }
+    nav.navbar .navbar-collapse .dropdown-menu.products .dropdown-item {
+      margin-right: 3.3rem; }
 
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*='col'] {
+  margin-bottom: 1rem; }
+
+.navbar .dropdown-menu {
+  border: none; }
+  @media only screen and (min-width: 85em) {
+    .navbar .dropdown-menu {
+      background-color: #f4f4eb !important;
+      margin-top: 26px;
+      height: 50px; } }
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem; }
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static; }
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+    z-index: -1; }
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff; } }
+
+/* adds some margin below the link sets  */
+/* breakpoint and up - mega dropdown styles */
 .top {
   background-color: #fdfdfd;
   border: 0.5px solid #e7e5e5; }
@@ -58,6 +152,239 @@ nav.navbar {
     .top {
       height: 35px;
       padding: 1.1rem; } }
+
+.sidebar {
+  height: 100%;
+  width: 10.3rem;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #f1f1ec;
+  overflow-x: hidden;
+  padding-top: 20px; }
+  @media only screen and (min-width: 56.25em) {
+    .sidebar {
+      width: 8.3rem; } }
+  @media only screen and (min-width: 85em) {
+    .sidebar {
+      width: 10.3rem; } }
+  .sidebar span {
+    font: 700 1.3rem "Roboto", sans-serif;
+    margin-left: 1.9rem;
+    border-bottom: 1px solid #60ad5f; }
+  .sidebar__bottom {
+    background: #60ad5f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10.3rem;
+    text-align: center;
+    z-index: 40;
+    cursor: pointer;
+    transition: background 0.3s; }
+    .sidebar__bottom__icon {
+      font-size: 3.2rem;
+      margin-top: 25px;
+      color: #fff; }
+    .sidebar__bottom:hover {
+      background: #4a8f4a; }
+
+.hero-sidebar {
+  background-color: #60ad5f;
+  height: 400px;
+  width: 60px;
+  position: absolute;
+  z-index: 100;
+  top: 60px;
+  left: 0;
+  bottom: 50px; }
+  @media only screen and (min-width: 56.25em) {
+    .hero-sidebar {
+      height: 400px;
+      top: 110px; } }
+  @media only screen and (min-width: 85em) {
+    .hero-sidebar {
+      height: 550px;
+      width: 79px;
+      position: absolute;
+      z-index: 100;
+      top: 110px;
+      left: 0;
+      bottom: 90rem; } }
+
+.home-full-slider-wrapper {
+  min-height: 400px; }
+  @media only screen and (min-width: 85em) {
+    .home-full-slider-wrapper {
+      height: 80vh; } }
+  .home-full-slider-wrapper .owl-carousel.owl-item img {
+    display: block;
+    width: 100%; }
+  .home-full-slider-wrapper .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+    height: 400px; }
+    @media only screen and (min-width: 85em) {
+      .home-full-slider-wrapper .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+        height: 550px;
+        background: #60ad5f none repeat scroll 0% 0%; } }
+  .home-full-slider-wrapper .owl-carousel .item__container {
+    padding: 68px 29px 42px 115px; }
+    @media only screen and (min-width: 85em) {
+      .home-full-slider-wrapper .owl-carousel .item__container {
+        padding: 85px 0 85px 145px; } }
+    .home-full-slider-wrapper .owl-carousel .item__container .text-container {
+      margin: 50px 0;
+      border-left: 2px solid #60ad5f; }
+      @media only screen and (min-width: 56.25em) {
+        .home-full-slider-wrapper .owl-carousel .item__container .text-container {
+          margin: 40px 0; } }
+      @media only screen and (min-width: 85em) {
+        .home-full-slider-wrapper .owl-carousel .item__container .text-container {
+          margin: 70px 0; } }
+
+img.bg-image {
+  object-fit: cover;
+  background-size: cover;
+  filter: brightness(60%); }
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0; }
+
+.solutions {
+  margin-top: 8.7rem;
+  margin-bottom: 10rem; }
+  .solutions__container {
+    margin-top: 65px;
+    margin-bottom: 65px; }
+    @media only screen and (min-width: 85em) {
+      .solutions__container {
+        margin-top: 0; } }
+    .solutions__container--heading h1 {
+      position: absolute;
+      font-family: "Roboto", sans-serif;
+      top: 0;
+      left: 0;
+      color: #60ad5f;
+      font-weight: 700;
+      z-index: -1;
+      font-size: 76px;
+      line-height: 1.25rem;
+      margin-top: 65px; }
+      @media only screen and (min-width: 85em) {
+        .solutions__container--heading h1 {
+          margin-top: 0; } }
+    .solutions__container--heading h3 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-top: 5px; }
+    .solutions__container--heading hr {
+      max-width: 70%;
+      border-bottom: 1px solid #60ad5f;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      text-align: left;
+      margin-top: 13px;
+      margin-right: 0;
+      margin-left: 0; }
+
+.modal.right .modal-dialog {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  max-width: 1000px; }
+  @media only screen and (min-width: 85em) {
+    .modal.right .modal-dialog {
+      width: 993px;
+      height: 675px; } }
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto; }
+
+.modal.right .modal-body {
+  padding: 15px 15px 20px; }
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: #f6f6f6; }
+  .modal-content .modal-body__title {
+    /* Rectangle 15: */
+    opacity: 1;
+    background: #ffffff;
+    border: 2px solid #000000;
+    width: 100%;
+    height: auto;
+    padding: 25px; }
+    @media only screen and (min-width: 56.25em) {
+      .modal-content .modal-body__title {
+        width: 464px;
+        height: 185px;
+        margin-top: 150px; } }
+  .modal-content .modal-body__content {
+    padding: 30px 0; }
+    @media only screen and (min-width: 56.25em) {
+      .modal-content .modal-body__content {
+        padding: 30px 50px 0; } }
+    @media only screen and (min-width: 85em) {
+      .modal-content .modal-body__content {
+        padding: 30px 80px 0; } }
+  .modal-content .modal-body button {
+    border: 0;
+    background-color: #fff;
+    font-weight: 700; }
+
+.modal-header {
+  background-color: #f6f6f6; }
+  .modal-header button {
+    font-size: 34px; }
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out; }
+
+.modal.right.fade.show .modal-dialog {
+  right: 0; }
+
+.vl {
+  border-left: 1px solid #1b4079;
+  height: 9rem;
+  margin-left: 5%;
+  position: relative;
+  margin-top: 2rem; }
+  @media only screen and (min-width: 85em) {
+    .vl {
+      margin-top: -30px;
+      height: 14rem; } }
+
+.vl--right {
+  border-left: 1px solid #1b4079;
+  height: 9rem;
+  margin-left: 90%;
+  position: relative;
+  margin-top: 2rem; }
+  @media only screen and (min-width: 85em) {
+    .vl--right {
+      margin-top: -70px;
+      height: 14rem; } }
 
 html {
   font-size: 62.5%; }
@@ -71,6 +398,14 @@ html {
     html {
       font-size: 100%; } }
 
+.heading--primary {
+  font: 400 2.4rem "Roboto", sans-serif;
+  text-align: center; }
+  @media only screen and (min-width: 85em) {
+    .heading--primary {
+      font-size: 3.2rem;
+      margin-bottom: 127px; } }
+
 .top a {
   font: 400 1.4rem "Roboto", sans-serif;
   color: #9b9b9b;
@@ -81,15 +416,196 @@ ul.navbar-nav {
   ul.navbar-nav li.nav-item a {
     color: #000;
     font-weight: 400; }
+    ul.navbar-nav li.nav-item a:hover {
+      font-weight: 700;
+      color: #42464b; }
   ul.navbar-nav li.nav-item.active a {
     color: #60ad5f;
     font-weight: 700; }
 
+@media only screen and (min-width: 85em) {
+  .navbar-collapse .dropdown-menu {
+    text-align: center; } }
+
 .navbar-collapse .dropdown-menu a.dropdown-item {
   color: rgba(0, 0, 0, 0.61);
   font-size: 14px;
-  text-transform: none; }
+  text-transform: none;
+  font-family: "Roboto", sans-serif; }
+  .navbar-collapse .dropdown-menu a.dropdown-item:focus {
+    background-color: #f4f4eb; }
   @media only screen and (min-width: 85em) {
     .navbar-collapse .dropdown-menu a.dropdown-item {
       font-size: 10px;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #42464b; } }
+
+@media only screen and (min-width: 85em) {
+  .navbar-collapse .dropdown-menu.articles {
+    text-align: right; } }
+
+.hero-sidebar {
+  font-family: "Roboto", sans-serif;
+  z-index: 4;
+  color: #8df58b; }
+  .hero-sidebar span {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    margin-left: -14px;
+    font-size: 18px; }
+    @media only screen and (min-width: 85em) {
+      .hero-sidebar span {
+        margin-left: -15px;
+        font-size: 22px; } }
+
+.item__container--heading {
+  font: 700 2.6rem "Roboto", sans-serif;
+  color: #fff; }
+  @media only screen and (min-width: 56.25em) {
+    .item__container--heading {
+      font-size: 60px;
+      padding-right: 500px; } }
+  @media only screen and (min-width: 85em) {
+    .item__container--heading {
+      padding-right: 700px;
+      font-size: 65px; } }
+
+.item__container--text {
+  font: 400 1.2rem "Raleway", sans-serif;
+  color: #fff;
+  margin-left: 20px; }
+  @media only screen and (min-width: 56.25em) {
+    .item__container--text {
+      font-size: 1.6rem;
+      max-width: 550px; } }
+  @media only screen and (min-width: 85em) {
+    .item__container--text {
+      max-width: 500px;
+      font-size: 13px; } }
+
+.btn-text-white {
+  text-transform: uppercase;
+  color: #fff;
+  font: 700 10px "Raleway", sans-serif; }
+  @media only screen and (min-width: 56.25em) {
+    .btn-text-white {
+      font-weight: 400;
+      font-size: 1.3rem; } }
+
+.main-paragraph {
+  font: 400 14px/2 "Raleway", sans-serif; }
+  @media only screen and (min-width: 85em) {
+    .main-paragraph {
+      font-size: 16px; } }
+  .main-paragraph span {
+    font-size: 22px; }
+
+.solutions__container--content {
+  font: 400 1.6rem/2 "Raleway", sans-serif;
+  color: #666666; }
+  .solutions__container--content span {
+    color: #000; }
+  .solutions__container--content button.btn-solutions {
+    font-weight: 700;
+    color: #42464b; }
+
+.modal-body__title h1 {
+  font: 700 3.2rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #42464b;
+  margin-bottom: 30px; }
+
+.modal-body__title a {
+  font: 700 2.1rem "Roboto", sans-serif;
+  color: #42464b;
+  margin-top: 25px; }
+  .modal-body__title a i {
+    color: #60ad5f;
+    font-size: 12px; }
+
+.modal-body__content p {
+  font: 700 2.5rem "Raleway", sans-serif;
+  color: #42464b; }
+
+.modal-body__content li {
+  font: 400 1.6rem/1.7 "Raleway", sans-serif;
+  color: #42464b; }
+  .modal-body__content li span {
+    font-weight: 700; }
+
+.modal-body p.modal-body__content--2 {
+  font: 400 1.8rem/1.7 "Raleway", sans-serif;
+  color: #42464b; }
+
+.motto__content h1 {
+  font: 400 2.4rem "Roboto", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    .motto__content h1 {
+      font-size: 3.6rem; } }
+
+.motto__content p {
+  font: 400 1.5rem/2 "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    .motto__content p {
+      font-size: 1.6rem; } }
+  .motto__content p span {
+    color: #000;
+    font-weight: 700; }
+
+.solutions__heading {
+  font: 700 3.6rem "Roboto", sans-serif;
+  color: #42464b; }
+
+.solutions__content {
+  margin-top: 3rem;
+  font: 400 1.6rem/2 "Raleway", sans-serif;
+  color: #42464b; }
+  .solutions__content a {
+    color: #60ad5f; }
+
+@media only screen and (min-width: 56.25em) {
+  .motto {
+    position: relative; } }
+
+.motto [class*='col-sm-12']:last-child {
+  padding-right: 0;
+  padding-left: 0; }
+
+.motto__image img {
+  /* [ IMG 021 B ]: */
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.35); }
+
+.motto__content {
+  background-color: #fafafa;
+  z-index: -1;
+  margin-top: 20px;
+  padding: 40px 15px; }
+  @media only screen and (min-width: 56.25em) {
+    .motto__content {
+      position: relative;
+      margin-left: -102px;
+      margin-top: -78px;
+      padding: 35px 120px; } }
+  @media only screen and (min-width: 85em) {
+    .motto__content {
+      padding: 51px 164px; } }
+  .motto__content hr {
+    border-top: 2px solid #60ad5f;
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    max-width: 30%;
+    text-align: left;
+    margin-right: 240px;
+    margin-bottom: 40px; }
+    @media only screen and (min-width: 56.25em) {
+      .motto__content hr {
+        margin-right: 400px; } }
+  .motto__content p {
+    margin-top: 20px; }

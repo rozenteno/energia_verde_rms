@@ -2,19 +2,40 @@ nav.navbar {
   height: 6rem;
   background-color: #fff;
   padding: 0;
-  @include respond('desktop') {
+  font-size: 1.6rem;
+  @include respond('tab-port') {
     min-height: 9.4rem;
   }
   a.navbar-brand img {
-    height: 38px;
+    height: 50px;
+    @include respond('tab-port') {
+      margin-left: 5rem;
+    }
+    @include respond('desktop') {
+      margin-left: 9.9rem;
+    }
   }
-  .navbar-nav li a {
-    // height: 60px;
-    // line-height: 60px;
-    padding: 20px;
-    // :last-child {
-    //   margin-bottom: 20px;
-    // }
+  .navbar-nav {
+    @include respond('tab-port') {
+      margin-right: 11rem;
+    }
+    @include respond('desktop') {
+      margin-right: 9.9rem;
+    }
+    li a {
+      // height: 60px;
+      // line-height: 60px;
+      padding: 20px;
+      margin-right: 4.3rem;
+      @include respond('desktop') {
+        height: auto;
+        line-height: 1.5;
+        padding: 4px;
+      }
+      // :last-child {
+      //   margin-bottom: 20px;
+      // }
+    }
   }
   button.navbar-toggler,
   a.navbar-contact {
@@ -37,6 +58,7 @@ nav.navbar {
   }
   .navbar-collapse {
     background-color: $bone;
+    z-index: 99;
     @include respond('tab-port') {
       background-color: #fff;
     }
@@ -45,9 +67,131 @@ nav.navbar {
       border: none;
       border-bottom: 1px solid #e6e6dd;
       border-radius: 0;
+      // padding-left: 58rem;
+      @include respond('desktop') {
+        background-color: $nav-dropdown;
+        .container {
+          margin-top: 15px;
+        }
+        a.dropdown-item {
+          display: inline;
+          &:hover {
+            color: $main-green;
+            background-color: $nav-dropdown;
+          }
+          &:active {
+            background-color: $nav-dropdown;
+          }
+        }
+      }
+    }
+    .dropdown-menu.products {
+      .dropdown-item {
+        margin-right: 3.3rem;
+      }
     }
   }
 }
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*='col'] {
+  margin-bottom: 1rem;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+
+  @include respond('desktop') {
+    background-color: $nav-dropdown !important;
+    margin-top: 26px;
+    height: 50px;
+  }
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+    z-index: -1;
+  }
+
+  /* shows the dropdown menu on hover */
+  // .navbar .dropdown:hover .dropdown-menu,
+  // .navbar .dropdown .dropdown-menu:hover {
+  //   display: block !important;
+  // }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}
+
+/* adds some margin below the link sets  */
+// .navbar .dropdown-menu div[class*='col'] {
+//   margin-bottom: 1rem;
+// }
+
+// .navbar .dropdown-menu {
+//   border: none;
+//   background-color: #0060c8 !important;
+// }
+
+/* breakpoint and up - mega dropdown styles */
+// @media screen and (min-width: 992px) {
+//   /* remove the padding from the navbar so the dropdown hover state is not broken */
+//   .navbar {
+//     padding-top: 0px;
+//     padding-bottom: 0px;
+//   }
+
+//   /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+//   // .navbar .nav-item {
+//   //   padding: 0.5rem 0.5rem;
+//   //   margin: 0 0.25rem;
+//   // }
+//   /* makes the dropdown full width  */
+//   .navbar .dropdown {
+//     position: static;
+//   }
+
+//   .navbar .dropdown-menu {
+//     width: 100%;
+//     left: 0;
+//     right: 0;
+//     /*  height of nav-item  */
+//     top: 68px;
+//     height: 50px;
+//     z-index: -1;
+//   }
+
+//   /* shows the dropdown menu on hover */
+//   .navbar .dropdown:hover .dropdown-menu,
+//   .navbar .dropdown .dropdown-menu:hover {
+//     display: block !important;
+//   }
+// }
 
 // nav.navbar {
 //   background-color: #fff;

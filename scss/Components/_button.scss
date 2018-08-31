@@ -1,0 +1,25 @@
+.btn {
+  border: 2px solid $main-green;
+  border-radius: 21px;
+  background-color: transparent;
+  height: 40px;
+  width: 188px;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+  }
+}
+
+button.btn-solutions {
+  background-color: #fff;
+  border: none;
+  margin-top: 31px;
+  cursor: pointer;
+  &:last-child {
+    margin-top: 7px;
+  }
+  i {
+    color: $main-green;
+  }
+}

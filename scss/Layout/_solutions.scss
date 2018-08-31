@@ -1,0 +1,168 @@
+.solutions {
+  margin-top: 8.7rem;
+  margin-bottom: 10rem;
+  &__container {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    @include respond('desktop') {
+      margin-top: 0;
+    }
+    &--heading {
+      h1 {
+        position: absolute;
+        font-family: $main-font;
+        top: 0;
+        left: 0;
+        color: $main-green;
+        font-weight: 700;
+        z-index: -1;
+        font-size: 76px;
+        line-height: 1.25rem;
+        margin-top: 65px;
+        @include respond('desktop') {
+          margin-top: 0;
+        }
+      }
+      h3 {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 5px;
+        // &::after {
+        //   content: '';
+        //   position: absolute;
+        //   height: 1px;
+        //   background: $main-green;
+        //   top: 170%;
+        //   width: 70%;
+        //   left: 37%;
+        //   transform: translateX(-50%);
+        // }
+      }
+      hr {
+        max-width: 70%;
+        border-bottom: 1px solid $main-green;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        text-align: left;
+        margin-top: 13px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.modal.right .modal-dialog {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  max-width: 1000px;
+  @include respond('desktop') {
+    width: 993px;
+    height: 675px;
+  }
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.right .modal-body {
+  padding: 15px 15px 20px;
+  @include respond('tab-port') {
+    // padding: 15px 15px 80px;
+  }
+}
+
+// .modal.right.fade .modal-dialog {
+//   right: -320px;
+//   -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+//   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+//   -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+//   transition: opacity 0.3s linear, left 0.3s ease-out;
+// }
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: #f6f6f6;
+  // max-width: 95em;
+  .modal-body {
+    &__title {
+      /* Rectangle 15: */
+      opacity: 1;
+      background: #ffffff;
+      border: 2px solid #000000;
+      width: 100%;
+      height: auto;
+
+      padding: 25px;
+      @include respond('tab-port') {
+        width: 464px;
+        height: 185px;
+        margin-top: 150px;
+      }
+    }
+    &__content {
+      padding: 30px 0;
+      @include respond('tab-port') {
+        // padding: 30px 80px;
+        padding: 30px 50px 0;
+      }
+      @include respond('desktop') {
+        padding: 30px 80px 0;
+      }
+    }
+    button {
+      border: 0;
+      background-color: #fff;
+      font-weight: 700;
+    }
+    // &__title {
+    //   /* Rectangle 15: */
+    //   opacity: 0.73;
+    //   background: #ffffff;
+    //   border: 2px solid #000000;
+    //   width: 464px;
+    //   height: 185px;
+    //   position: relative;
+    //   h1 {
+    //     position: absolute;
+    //     left: -11.125em;
+    //     bottom: -2.56em;
+    //   }
+    // }
+  }
+}
+
+.modal-header {
+  background-color: #f6f6f6;
+  button {
+    font-size: 34px;
+  }
+}
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.modal.right.fade.show .modal-dialog {
+  right: 0;
+}
+// .modal.right.fade.in .modal-dialog {
+//   right: 0;
+// }

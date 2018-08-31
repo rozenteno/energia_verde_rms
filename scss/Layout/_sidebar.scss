@@ -1,0 +1,66 @@
+.sidebar {
+  height: 100%;
+  width: 10.3rem;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: $bone;
+  overflow-x: hidden;
+  padding-top: 20px;
+  @include respond('tab-port') {
+    width: 8.3rem;
+  }
+  @include respond('desktop') {
+    width: 10.3rem;
+  }
+  span {
+    font: 700 1.3rem $main-font;
+    margin-left: 1.9rem;
+    border-bottom: 1px solid $main-green;
+  }
+  &__bottom {
+    background: $main-green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10.3rem;
+    text-align: center;
+    z-index: 40;
+    cursor: pointer;
+    transition: background 0.3s;
+    &__icon {
+      font-size: 3.2rem;
+      margin-top: 25px;
+      color: #fff;
+    }
+    &:hover {
+      background: darken($main-green, 10%);
+    }
+  }
+}
+.hero-sidebar {
+  background-color: $main-green;
+  height: 400px;
+  width: 60px;
+  position: absolute;
+  z-index: 100;
+  top: 60px;
+  left: 0;
+  bottom: 50px;
+  @include respond('tab-port') {
+    height: 400px;
+    top: 110px;
+  }
+  @include respond('desktop') {
+    // height: 589px;
+    height: 550px;
+    width: 79px;
+    position: absolute;
+    z-index: 100;
+    top: 110px;
+    left: 0;
+    bottom: 90rem;
+  }
+}
