@@ -14,8 +14,8 @@
   height: 9rem;
   margin-left: 90%;
   position: relative;
-  margin-top: 2rem;
-  @include respond(desktop) {
+  margin-top: -2rem;
+  @include respond('desktop') {
     margin-top: -70px;
     height: 14rem;
   }

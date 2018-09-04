@@ -90,6 +90,65 @@ nav.navbar {
         margin-right: 3.3rem;
       }
     }
+    .contact-info {
+      background-color: #fcfcfc;
+      padding: 15px;
+      border-bottom: 1px solid #f6f6f6;
+      a {
+        color: $main-green;
+      }
+      li {
+        &:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.nav.nav-tabs {
+  margin-top: 3rem;
+  .nav-item {
+    margin-top: 15px;
+    @include respond('desktop') {
+      margin-right: 10px;
+      margin-top: 0;
+    }
+    .nav-link {
+      &.active {
+        svg #index-escritorio,
+        svg #Equipos-de-Medición {
+          stroke: $main-green;
+        }
+      }
+      // span.icon-capacitor {
+      //   background-image: url('/dist/svg/capacitorIcon.svg');
+      //   height: 17px;
+      //   width: 13px;
+      //   display: block;
+      //   &.active {
+      //     background-image: url('/dist/svg/capacitorGreen.svg');
+      //   }
+      //   // &:hover {
+      //   //   #Bancos-de-Capacitores-y-Filtros-Armónicos {
+      //   //     fill: $main-green;
+      //   //   }
+      //   // }
+      // }
+      // span.icon-systems {
+      //   background-image: url('/dist/svg/systemsIcon.svg');
+      //   height: 17px;
+      //   width: 13px;
+      //   display: block;
+      //   &.active {
+      //     background-image: url('/dist/svg/systemsIconGreen.svg');
+      //   }
+      // &:hover {
+      //   #Bancos-de-Capacitores-y-Filtros-Armónicos {
+      //     fill: $main-green;
+      //   }
+      // }
+    }
   }
 }
 

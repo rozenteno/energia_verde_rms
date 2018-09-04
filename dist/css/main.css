@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -105,6 +106,26 @@ nav.navbar {
               background-color: #f4f4eb; } }
     nav.navbar .navbar-collapse .dropdown-menu.products .dropdown-item {
       margin-right: 3.3rem; }
+    nav.navbar .navbar-collapse .contact-info {
+      background-color: #fcfcfc;
+      padding: 15px;
+      border-bottom: 1px solid #f6f6f6; }
+      nav.navbar .navbar-collapse .contact-info a {
+        color: #60ad5f; }
+      nav.navbar .navbar-collapse .contact-info li:last-child {
+        margin-top: 10px; }
+
+.nav.nav-tabs {
+  margin-top: 3rem; }
+  .nav.nav-tabs .nav-item {
+    margin-top: 15px; }
+    @media only screen and (min-width: 85em) {
+      .nav.nav-tabs .nav-item {
+        margin-right: 10px;
+        margin-top: 0; } }
+    .nav.nav-tabs .nav-item .nav-link.active svg #index-escritorio,
+    .nav.nav-tabs .nav-item .nav-link.active svg #Equipos-de-Medición {
+      stroke: #60ad5f; }
 
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*='col'] {
@@ -152,6 +173,8 @@ nav.navbar {
     .top {
       height: 35px;
       padding: 1.1rem; } }
+  .top a {
+    text-decoration: none; }
 
 .sidebar {
   height: 100%;
@@ -234,7 +257,7 @@ nav.navbar {
       .home-full-slider-wrapper .owl-carousel .item__container {
         padding: 85px 0 85px 145px; } }
     .home-full-slider-wrapper .owl-carousel .item__container .text-container {
-      margin: 50px 0;
+      margin: 55px 0;
       border-left: 2px solid #60ad5f; }
       @media only screen and (min-width: 56.25em) {
         .home-full-slider-wrapper .owl-carousel .item__container .text-container {
@@ -256,8 +279,14 @@ img.bg-image {
   z-index: 0; }
 
 .solutions {
-  margin-top: 8.7rem;
+  margin-top: 0;
   margin-bottom: 10rem; }
+  @media only screen and (min-width: 56.25em) {
+    .solutions {
+      margin-top: 8rem; } }
+  @media only screen and (min-width: 85em) {
+    .solutions {
+      margin-top: 8.7rem; } }
   .solutions__container {
     margin-top: 65px;
     margin-bottom: 65px; }
@@ -380,7 +409,7 @@ img.bg-image {
   height: 9rem;
   margin-left: 90%;
   position: relative;
-  margin-top: 2rem; }
+  margin-top: -2rem; }
   @media only screen and (min-width: 85em) {
     .vl--right {
       margin-top: -70px;
@@ -399,12 +428,17 @@ html {
       font-size: 100%; } }
 
 .heading--primary {
-  font: 400 2.4rem "Roboto", sans-serif;
-  text-align: center; }
+  font: 400 2.4rem "Roboto", sans-serif; }
   @media only screen and (min-width: 85em) {
     .heading--primary {
       font-size: 3.2rem;
       margin-bottom: 127px; } }
+
+p.paragraph {
+  font: 400 1.6rem/1.5 "Raleway", sans-serif;
+  color: #42464b; }
+  p.paragraph a {
+    color: #60ad5f; }
 
 .top a {
   font: 400 1.4rem "Roboto", sans-serif;
@@ -445,6 +479,16 @@ ul.navbar-nav {
   .navbar-collapse .dropdown-menu.articles {
     text-align: right; } }
 
+.nav.nav-tabs .nav-item a.nav-link {
+  text-transform: uppercase;
+  font: 700 1.4rem "Roboto", sans-serif;
+  color: #000;
+  padding-bottom: 10px;
+  border: 0; }
+  .nav.nav-tabs .nav-item a.nav-link.active {
+    color: #60ad5f;
+    border-bottom: 1px solid #60ad5f; }
+
 .hero-sidebar {
   font-family: "Roboto", sans-serif;
   z-index: 4;
@@ -464,11 +508,12 @@ ul.navbar-nav {
 
 .item__container--heading {
   font: 700 2.6rem "Roboto", sans-serif;
+  font-size: 26px;
   color: #fff; }
   @media only screen and (min-width: 56.25em) {
     .item__container--heading {
       font-size: 60px;
-      padding-right: 500px; } }
+      padding-right: 300px; } }
   @media only screen and (min-width: 85em) {
     .item__container--heading {
       padding-right: 700px;
@@ -546,6 +591,9 @@ ul.navbar-nav {
   color: #42464b; }
   @media only screen and (min-width: 56.25em) {
     .motto__content h1 {
+      font-size: 2.8rem; } }
+  @media only screen and (min-width: 85em) {
+    .motto__content h1 {
       font-size: 3.6rem; } }
 
 .motto__content p {
@@ -553,20 +601,25 @@ ul.navbar-nav {
   color: #42464b; }
   @media only screen and (min-width: 56.25em) {
     .motto__content p {
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 85em) {
+    .motto__content p {
       font-size: 1.6rem; } }
   .motto__content p span {
     color: #000;
     font-weight: 700; }
 
-.solutions__heading {
-  font: 700 3.6rem "Roboto", sans-serif;
-  color: #42464b; }
+.products-home .heading--primary {
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 85em) {
+    .products-home .heading--primary {
+      margin-top: 3rem; } }
 
-.solutions__content {
+.products-home__content {
   margin-top: 3rem;
   font: 400 1.6rem/2 "Raleway", sans-serif;
   color: #42464b; }
-  .solutions__content a {
+  .products-home__content a {
     color: #60ad5f; }
 
 @media only screen and (min-width: 56.25em) {
@@ -580,12 +633,22 @@ ul.navbar-nav {
 .motto__image img {
   /* [ IMG 021 B ]: */
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.35); }
+  @media only screen and (min-width: 37.5em) {
+    .motto__image img {
+      height: 300px; } }
+  @media only screen and (min-width: 56.25em) {
+    .motto__image img {
+      height: auto; } }
+
+@media only screen and (min-width: 37.5em) {
+  .motto__image {
+    text-align: center; } }
 
 .motto__content {
   background-color: #fafafa;
   z-index: -1;
   margin-top: 20px;
-  padding: 40px 15px; }
+  padding: 40px 25px; }
   @media only screen and (min-width: 56.25em) {
     .motto__content {
       position: relative;
@@ -606,6 +669,14 @@ ul.navbar-nav {
     margin-bottom: 40px; }
     @media only screen and (min-width: 56.25em) {
       .motto__content hr {
-        margin-right: 400px; } }
+        margin-bottom: 20px; } }
+    @media only screen and (min-width: 85em) {
+      .motto__content hr {
+        margin-right: 400px;
+        margin-bottom: 50px; } }
   .motto__content p {
     margin-top: 20px; }
+
+@media only screen and (min-width: 85em) {
+  .products-home {
+    padding: 0 90px; } }

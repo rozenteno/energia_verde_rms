@@ -1,10 +1,19 @@
 // ------------ TYPES OF HEADING -----------------
 .heading--primary {
   font: 400 2.4rem $main-font;
-  text-align: center;
+  // text-align: center;
   @include respond('desktop') {
     font-size: 3.2rem;
     margin-bottom: 127px;
+  }
+}
+
+p.paragraph {
+  font: 400 1.6rem/1.5 $secondary-font;
+  color: #42464b;
+
+  a {
+    color: $main-green;
   }
 }
 
@@ -65,6 +74,21 @@ ul.navbar-nav {
     }
   }
 }
+.nav.nav-tabs {
+  .nav-item {
+    a.nav-link {
+      text-transform: uppercase;
+      font: 700 1.4rem $main-font;
+      color: #000;
+      padding-bottom: 10px;
+      border: 0;
+      &.active {
+        color: $main-green;
+        border-bottom: 1px solid $main-green;
+      }
+    }
+  }
+}
 
 //------------ HERO SIDEBAR -----------------
 .hero-sidebar {
@@ -90,11 +114,13 @@ ul.navbar-nav {
 .item__container {
   &--heading {
     font: 700 2.6rem $main-font;
+    font-size: 26px;
     color: #fff;
     @include respond('tab-port') {
       font-size: 60px;
-      padding-right: 500px;
+      padding-right: 300px;
     }
+
     @include respond('desktop') {
       padding-right: 700px;
       font-size: 65px;
@@ -202,6 +228,9 @@ ul.navbar-nav {
       font: 400 2.4rem $main-font;
       color: #42464b;
       @include respond('tab-port') {
+        font-size: 2.8rem;
+      }
+      @include respond('desktop') {
         font-size: 3.6rem;
       }
     }
@@ -209,6 +238,9 @@ ul.navbar-nav {
       font: 400 1.5rem/2 $secondary-font;
       color: #42464b;
       @include respond('tab-port') {
+        font-size: 1.4rem;
+      }
+      @include respond('desktop') {
         font-size: 1.6rem;
       }
       span {
@@ -220,10 +252,29 @@ ul.navbar-nav {
 }
 //------------ SOLUTIONS -----------------
 
-.solutions {
-  &__heading {
-    font: 700 3.6rem $main-font;
-    color: #42464b;
+// .solutions {
+//   &__heading {
+//     font: 700 3.6rem $main-font;
+//     color: #42464b;
+//   }
+//   &__content {
+//     margin-top: 3rem;
+//     font: 400 1.6rem/2 $secondary-font;
+//     color: #42464b;
+//     a {
+//       color: $main-green;
+//     }
+//   }
+// }
+
+//------------ PRODUCTS HOME -----------------
+
+.products-home {
+  .heading--primary {
+    margin-bottom: 2rem;
+    @include respond('desktop') {
+      margin-top: 3rem;
+    }
   }
   &__content {
     margin-top: 3rem;

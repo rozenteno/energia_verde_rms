@@ -12,13 +12,25 @@
     img {
       /* [ IMG 021 B ]: */
       box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.35);
+      @include respond('phone') {
+        height: 300px;
+      }
+      @include respond('tab-port') {
+        height: auto;
+      }
+      // @include respond('desktop') {
+      //   height: auto;
+      // }
+    }
+    @include respond('phone') {
+      text-align: center;
     }
   }
   &__content {
     background-color: #fafafa;
     z-index: -1;
     margin-top: 20px;
-    padding: 40px 15px;
+    padding: 40px 25px;
     @include respond('tab-port') {
       position: relative;
       margin-left: -102px;
@@ -38,11 +50,21 @@
       margin-right: 240px;
       margin-bottom: 40px;
       @include respond('tab-port') {
+        margin-bottom: 20px;
+      }
+      @include respond('desktop') {
         margin-right: 400px;
+        margin-bottom: 50px;
       }
     }
     p {
       margin-top: 20px;
     }
+  }
+}
+
+.products-home {
+  @include respond('desktop') {
+    padding: 0 90px;
   }
 }

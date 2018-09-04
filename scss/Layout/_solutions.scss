@@ -1,6 +1,12 @@
 .solutions {
-  margin-top: 8.7rem;
+  margin-top: 0;
   margin-bottom: 10rem;
+  @include respond('tab-port') {
+    margin-top: 8rem;
+  }
+  @include respond('desktop') {
+    margin-top: 8.7rem;
+  }
   &__container {
     margin-top: 65px;
     margin-bottom: 65px;
