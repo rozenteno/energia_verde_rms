@@ -14,10 +14,28 @@
   @include respond('desktop') {
     width: 10.3rem;
   }
+  &--message {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 75%;
+    text-align: center;
+    margin-left: -14px;
+    font-size: 14px;
+    color: $main-green;
+    font-family: $main-font;
+    @include respond('desktop') {
+      margin-left: 0;
+      font-size: 13px;
+    }
+  }
   span {
-    font: 700 1.3rem $main-font;
-    margin-left: 1.9rem;
-    border-bottom: 1px solid $main-green;
+    &.lang {
+      font: 700 1.3rem $main-font;
+      margin-left: 1.9rem;
+      border-bottom: 1px solid $main-green;
+      transform: rotate(0deg);
+    }
   }
   &__bottom {
     background: $main-green;

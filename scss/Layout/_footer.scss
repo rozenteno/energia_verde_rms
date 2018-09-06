@@ -1,0 +1,47 @@
+.footer {
+  background-color: #fcfcfc;
+  &__top {
+    padding: 76px 0 50px;
+  }
+
+  &__bottom {
+    padding: 16px 0;
+    background-color: #fff;
+    p {
+      margin-bottom: 0;
+      a {
+        color: #000;
+      }
+    }
+  }
+  &__logo {
+    img {
+      height: 55px;
+      margin-bottom: 42px;
+    }
+  }
+  .links {
+    @include respond('desktop') {
+      margin-left: 30px;
+    }
+  }
+
+  &__call,
+  &__email,
+  &__address,
+  &__useful {
+    border-left: 2px solid $main-green;
+    padding-left: 20px;
+    @include respond('tab-port') {
+      padding-left: 34px;
+    }
+  }
+  &__useful {
+    // &--links p {
+    //   margin-top: 10px;
+    // }
+    @include respond('tab-port') {
+      margin-top: 30px;
+    }
+  }
+}

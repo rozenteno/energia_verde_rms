@@ -1,0 +1,30 @@
+.jumbotron {
+  min-height: 400px;
+  @include respond('tab-port') {
+    height: 45vh;
+  }
+  @include respond('desktop') {
+    height: 550px;
+  }
+  &__content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px;
+    @include respond('tab-port') {
+      margin-left: 25px;
+      margin-top: 108px;
+      padding: 46px;
+    }
+    @include respond('desktop') {
+      margin-left: 45px;
+      margin-top: 188px;
+      padding: 46px;
+    }
+    p {
+      margin-top: 40px;
+      padding-left: 20px;
+      border-left: 2px solid #60ad5f;
+    }
+  }
+}

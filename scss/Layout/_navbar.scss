@@ -4,7 +4,7 @@ nav.navbar {
   padding: 0;
   font-size: 1.6rem;
   @include respond('tab-port') {
-    min-height: 9.4rem;
+    min-height: 75px;
   }
   a.navbar-brand img {
     height: 50px;

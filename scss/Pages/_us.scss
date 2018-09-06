@@ -1,0 +1,58 @@
+.us {
+  background-image: url('/dist/img/us-hero.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.m-v {
+  margin: 0;
+  border-radius: 0;
+  margin-top: 30px;
+  @include respond('desktop') {
+    margin: 50px 0 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    h2 {
+      padding: 40px 60px 100px;
+    }
+    [class*='col-md'] {
+      padding: 0;
+    }
+  }
+  .m {
+    padding: 40px;
+    background-color: $main-green;
+    box-shadow: 0 2px 4px 0 rgba(126, 126, 126, 0.5);
+    height: 100%;
+    h1 {
+      font-size: 36px;
+    }
+    @include respond('desktop') {
+      box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+      // border-radius: 4px;
+    }
+  }
+  .v {
+    /* Rectangle 25 Copy: */
+    background: #fcfcfc;
+    box-shadow: 0 1px 11px 0 rgba(126, 126, 126, 0.15);
+    color: #fff;
+    padding: 40px;
+    h1 {
+      margin: 0;
+    }
+    @include respond('desktop') {
+      // margin-top: 20px;
+    }
+    @include respond('desktop') {
+      // margin-top: 50px;
+      height: 410px;
+      width: 420px;
+      h1 {
+        padding-top: 40px;
+      }
+    }
+  }
+}

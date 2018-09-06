@@ -8,6 +8,9 @@
 @import 'Layout/sidebar.scss';
 @import 'Layout/hero.scss';
 @import 'Layout/solutions.scss';
+@import 'Layout/footer.scss';
+@import 'Layout/jumbotron.scss';
+@import 'Layout/card.scss';
 
 @import 'Utilities/helpers.scss';
 
@@ -15,3 +18,6 @@
 @import 'Base/typography.scss';
 
 @import 'Pages/home.scss';
+@import 'Pages/quality-s.scss';
+@import 'Pages/management.scss';
+@import 'Pages/us.scss';

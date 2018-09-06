@@ -26,6 +26,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .btn:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
     font-weight: 700; }
+  .btn-text-green {
+    color: #60ad5f;
+    text-transform: uppercase;
+    font-weight: 700; }
 
 button.btn-solutions {
   background-color: #fff;
@@ -44,7 +48,7 @@ nav.navbar {
   font-size: 1.6rem; }
   @media only screen and (min-width: 56.25em) {
     nav.navbar {
-      min-height: 9.4rem; } }
+      min-height: 75px; } }
   nav.navbar a.navbar-brand img {
     height: 50px; }
     @media only screen and (min-width: 56.25em) {
@@ -192,10 +196,25 @@ nav.navbar {
   @media only screen and (min-width: 85em) {
     .sidebar {
       width: 10.3rem; } }
-  .sidebar span {
+  .sidebar--message {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 75%;
+    text-align: center;
+    margin-left: -14px;
+    font-size: 14px;
+    color: #60ad5f;
+    font-family: "Roboto", sans-serif; }
+    @media only screen and (min-width: 85em) {
+      .sidebar--message {
+        margin-left: 0;
+        font-size: 13px; } }
+  .sidebar span.lang {
     font: 700 1.3rem "Roboto", sans-serif;
     margin-left: 1.9rem;
-    border-bottom: 1px solid #60ad5f; }
+    border-bottom: 1px solid #60ad5f;
+    transform: rotate(0deg); }
   .sidebar__bottom {
     background: #60ad5f;
     position: absolute;
@@ -393,6 +412,75 @@ img.bg-image {
 .modal.right.fade.show .modal-dialog {
   right: 0; }
 
+.footer {
+  background-color: #fcfcfc; }
+  .footer__top {
+    padding: 76px 0 50px; }
+  .footer__bottom {
+    padding: 16px 0;
+    background-color: #fff; }
+    .footer__bottom p {
+      margin-bottom: 0; }
+      .footer__bottom p a {
+        color: #000; }
+  .footer__logo img {
+    height: 55px;
+    margin-bottom: 42px; }
+  @media only screen and (min-width: 85em) {
+    .footer .links {
+      margin-left: 30px; } }
+  .footer__call, .footer__email, .footer__address, .footer__useful {
+    border-left: 2px solid #60ad5f;
+    padding-left: 20px; }
+    @media only screen and (min-width: 56.25em) {
+      .footer__call, .footer__email, .footer__address, .footer__useful {
+        padding-left: 34px; } }
+  @media only screen and (min-width: 56.25em) {
+    .footer__useful {
+      margin-top: 30px; } }
+
+.jumbotron {
+  min-height: 400px; }
+  @media only screen and (min-width: 56.25em) {
+    .jumbotron {
+      height: 45vh; } }
+  @media only screen and (min-width: 85em) {
+    .jumbotron {
+      height: 550px; } }
+  .jumbotron__content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px; }
+    @media only screen and (min-width: 56.25em) {
+      .jumbotron__content {
+        margin-left: 25px;
+        margin-top: 108px;
+        padding: 46px; } }
+    @media only screen and (min-width: 85em) {
+      .jumbotron__content {
+        margin-left: 45px;
+        margin-top: 188px;
+        padding: 46px; } }
+    .jumbotron__content p {
+      margin-top: 40px;
+      padding-left: 20px;
+      border-left: 2px solid #60ad5f; }
+
+.cards {
+  margin-bottom: 46px;
+  margin-top: -45px; }
+  .cards .card {
+    /* Rectangle 23: */
+    margin-top: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 0;
+    padding: 54px; }
+    .cards .card ul {
+      list-style-image: url("/dist/svg/check.svg"); }
+
 .vl {
   border-left: 1px solid #1b4079;
   height: 9rem;
@@ -427,6 +515,13 @@ html {
     html {
       font-size: 100%; } }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
 .heading--primary {
   font: 400 2.4rem "Roboto", sans-serif; }
   @media only screen and (min-width: 85em) {
@@ -439,6 +534,29 @@ p.paragraph {
   color: #42464b; }
   p.paragraph a {
     color: #60ad5f; }
+
+.main-paragraph {
+  font: 400 14px/2 "Raleway", sans-serif; }
+  @media only screen and (min-width: 85em) {
+    .main-paragraph {
+      font-size: 16px; } }
+  .main-paragraph span {
+    font-weight: 700;
+    font-size: 16px; }
+
+.secondary-paragraph {
+  font: 400 14px "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .secondary-paragraph {
+      font-size: 18px; } }
+
+.cards .card ul li {
+  font: 400 1.4rem/2 "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .cards .card ul li {
+      font-size: 1.8rem; } }
 
 .top a {
   font: 400 1.4rem "Roboto", sans-serif;
@@ -489,21 +607,37 @@ ul.navbar-nav {
     color: #60ad5f;
     border-bottom: 1px solid #60ad5f; }
 
+.jumbotron h1 {
+  font: 700 2.4rem "Roboto", sans-serif;
+  color: #fff;
+  opacity: 1; }
+  @media only screen and (min-width: 85em) {
+    .jumbotron h1 {
+      font-size: 5rem; } }
+
+.jumbotron p {
+  font: 400 1.2rem/1.7 "Raleway", sans-serif;
+  color: #fff; }
+  @media only screen and (min-width: 85em) {
+    .jumbotron p {
+      font-size: 1.4rem; } }
+
 .hero-sidebar {
   font-family: "Roboto", sans-serif;
   z-index: 4;
   color: #8df58b; }
   .hero-sidebar span {
+    width: 220px;
     transform: rotate(-90deg);
     position: absolute;
     left: 0;
     top: 50%;
     text-align: center;
-    margin-left: -14px;
+    margin-left: -82px;
     font-size: 18px; }
     @media only screen and (min-width: 85em) {
       .hero-sidebar span {
-        margin-left: -15px;
+        margin-left: -72px;
         font-size: 22px; } }
 
 .item__container--heading {
@@ -540,14 +674,6 @@ ul.navbar-nav {
     .btn-text-white {
       font-weight: 400;
       font-size: 1.3rem; } }
-
-.main-paragraph {
-  font: 400 14px/2 "Raleway", sans-serif; }
-  @media only screen and (min-width: 85em) {
-    .main-paragraph {
-      font-size: 16px; } }
-  .main-paragraph span {
-    font-size: 22px; }
 
 .solutions__container--content {
   font: 400 1.6rem/2 "Raleway", sans-serif;
@@ -622,6 +748,79 @@ ul.navbar-nav {
   .products-home__content a {
     color: #60ad5f; }
 
+.footer__logo p {
+  font: 400 10px/2 "Raleway", sans-serif;
+  color: #9b9b9b; }
+
+.footer .links h2,
+.footer .links span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #42464b; }
+
+.footer .links h2 {
+  font-size: 20px; }
+
+.footer .links span {
+  font-size: 12px; }
+
+.footer .links p,
+.footer .links a {
+  margin-top: 24px;
+  font: 400 11px "Raleway", sans-serif;
+  color: #9b9b9b; }
+
+.footer__bottom p {
+  font: 100 9px "Roboto", sans-serif; }
+  .footer__bottom p a {
+    font-weight: 700; }
+
+.benefits-2 ul li {
+  font: 400 14px/2.5 "Raleway", sans-serif; }
+  @media only screen and (min-width: 85em) {
+    .benefits-2 ul li {
+      font-size: 16px; } }
+  .benefits-2 ul li span {
+    font-weight: 700; }
+
+.info__content--heading {
+  font: 400 1.8rem "Roboto", sans-serif; }
+  @media only screen and (min-width: 85em) {
+    .info__content--heading {
+      font-size: 2.6rem; } }
+
+.info__content--text {
+  font: 400 1.3rem/2 "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .info__content--text {
+      font-size: 1.5rem; } }
+
+.process h2 {
+  font: 400 1.8rem "Roboto", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .process h2 {
+      font-size: 2.6rem; } }
+
+.process p {
+  font: 400 1.3rem/2 "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .process p {
+      font-size: 1.5rem; } }
+
+.benefits h1 {
+  font: 700 1.8rem "Roboto", sans-serif;
+  color: #42464b; }
+
+.benefits p {
+  font: 400 1.5rem/2.2 "Raleway", sans-serif;
+  color: #fff; }
+  @media only screen and (min-width: 85em) {
+    .benefits p {
+      font-size: 2rem; } }
+
 @media only screen and (min-width: 56.25em) {
   .motto {
     position: relative; } }
@@ -680,3 +879,155 @@ ul.navbar-nav {
 @media only screen and (min-width: 85em) {
   .products-home {
     padding: 0 90px; } }
+
+.products-home #myTabContent {
+  margin-top: 30px; }
+
+.products-home .tab-content__image {
+  background-color: #f1f1ec; }
+  .products-home .tab-content__image img {
+    height: auto; }
+    @media only screen and (min-width: 56.25em) {
+      .products-home .tab-content__image img {
+        height: auto; } }
+    @media only screen and (min-width: 85em) {
+      .products-home .tab-content__image img {
+        height: 376px; } }
+
+.products-home .tab-content__desc h1.heading--primary {
+  margin-top: 35px; }
+
+@media only screen and (min-width: 56.25em) {
+  .products-home .tab-content__desc p.paragraph {
+    margin: 58px 0;
+    padding-left: 40px;
+    line-height: 2; } }
+
+.products-home .tab-content__desc button.btn-text-green {
+  margin-top: 20px; }
+  @media only screen and (min-width: 56.25em) {
+    .products-home .tab-content__desc button.btn-text-green {
+      margin-top: 0;
+      margin-left: 40px; } }
+
+.logos {
+  padding: 28px 0; }
+  .logos a img {
+    margin-top: 20px;
+    height: 30px; }
+    @media only screen and (min-width: 56.25em) {
+      .logos a img {
+        margin-top: 0;
+        height: auto; } }
+  .logos .descriptions {
+    margin-top: 28px; }
+    .logos .descriptions .card.card-body {
+      background-color: #42464b; }
+      .logos .descriptions .card.card-body p {
+        color: #fff; }
+
+.quality-s {
+  background-image: url("/dist/img/hero2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.benefits-2 {
+  margin-top: 51px; }
+  .benefits-2 ul {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    list-style-image: url("/dist/svg/check.svg"); }
+    .benefits-2 ul li {
+      padding-left: 10px; }
+
+.gestion {
+  background-image: url("/dist/img/hero3.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.info {
+  margin-top: 31px; }
+  .info p.secondary-paragraph {
+    font-size: 14px;
+    margin-bottom: 60px; }
+    @media only screen and (min-width: 85em) {
+      .info p.secondary-paragraph {
+        margin-bottom: 109px; } }
+  .info__content hr {
+    border-top: 1px solid #60ad5f;
+    width: 100px;
+    margin-bottom: 26px; }
+  .info__content--heading {
+    margin-top: 20px; }
+
+.process img {
+  height: 393px; }
+
+.process h2 {
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+.benefits {
+  background-color: #60ad5f;
+  margin-top: 80px; }
+  .benefits h1 {
+    /* Rectangle 26: */
+    background: #ffffff;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    width: 219px;
+    padding: 15px;
+    margin-top: -30px; }
+  .benefits p {
+    padding: 60px 0; }
+
+.us {
+  background-image: url("/dist/img/us-hero.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.m-v {
+  margin: 0;
+  border-radius: 0;
+  margin-top: 30px; }
+  @media only screen and (min-width: 85em) {
+    .m-v {
+      margin: 50px 0 50px;
+      padding-left: 150px;
+      padding-right: 150px; }
+      .m-v h2 {
+        padding: 40px 60px 100px; }
+      .m-v [class*='col-md'] {
+        padding: 0; } }
+  .m-v .m {
+    padding: 40px;
+    background-color: #60ad5f;
+    box-shadow: 0 2px 4px 0 rgba(126, 126, 126, 0.5);
+    height: 100%; }
+    .m-v .m h1 {
+      font-size: 36px; }
+    @media only screen and (min-width: 85em) {
+      .m-v .m {
+        box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1); } }
+  .m-v .v {
+    /* Rectangle 25 Copy: */
+    background: #fcfcfc;
+    box-shadow: 0 1px 11px 0 rgba(126, 126, 126, 0.15);
+    color: #fff;
+    padding: 40px; }
+    .m-v .v h1 {
+      margin: 0; }
+    @media only screen and (min-width: 85em) {
+      .m-v .v {
+        height: 410px;
+        width: 420px; }
+        .m-v .v h1 {
+          padding-top: 40px; } }

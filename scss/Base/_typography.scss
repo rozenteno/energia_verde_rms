@@ -16,7 +16,38 @@ p.paragraph {
     color: $main-green;
   }
 }
+.main-paragraph {
+  font: 400 14px/2 $secondary-font;
+  @include respond('desktop') {
+    font-size: 16px;
+  }
+  span {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+.secondary-paragraph {
+  font: 400 14px $secondary-font;
+  color: #42464b;
+  @include respond('desktop') {
+    font-size: 18px;
+  }
+}
 
+// ------------ CARD -----------------
+.cards {
+  .card {
+    ul {
+      li {
+        font: 400 1.4rem/2 $secondary-font;
+        color: #42464b;
+        @include respond('desktop') {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
 // ------------ TOP -----------------
 .top {
   a {
@@ -90,21 +121,42 @@ ul.navbar-nav {
   }
 }
 
+//------------ JUMBOTRON -----------------
+.jumbotron {
+  h1 {
+    font: 700 2.4rem $main-font;
+    color: #fff;
+    opacity: 1;
+    @include respond('desktop') {
+      font-size: 5rem;
+    }
+  }
+  p {
+    font: 400 1.2rem/1.7 $secondary-font;
+    color: #fff;
+    @include respond('desktop') {
+      font-size: 1.4rem;
+    }
+  }
+}
+
 //------------ HERO SIDEBAR -----------------
 .hero-sidebar {
   font-family: $main-font;
   z-index: 4;
   color: #8df58b;
   span {
+    width: 220px;
     transform: rotate(-90deg);
     position: absolute;
     left: 0;
     top: 50%;
     text-align: center;
-    margin-left: -14px;
+    margin-left: -82px;
+    // margin-left: -14px;
     font-size: 18px;
     @include respond('desktop') {
-      margin-left: -15px;
+      margin-left: -72px;
       font-size: 22px;
     }
   }
@@ -149,17 +201,6 @@ ul.navbar-nav {
   @include respond('tab-port') {
     font-weight: 400;
     font-size: 1.3rem;
-  }
-}
-
-//------------ MAIN PARAGRAPH -----------------
-.main-paragraph {
-  font: 400 14px/2 $secondary-font;
-  @include respond('desktop') {
-    font-size: 16px;
-  }
-  span {
-    font-size: 22px;
   }
 }
 
@@ -282,6 +323,107 @@ ul.navbar-nav {
     color: #42464b;
     a {
       color: $main-green;
+    }
+  }
+}
+
+//------------ FOOTER -----------------
+.footer {
+  &__logo {
+    p {
+      font: 400 10px/2 $secondary-font;
+      color: $footer-color-text;
+    }
+  }
+  .links {
+    h2,
+    span {
+      font-family: $main-font;
+      font-weight: 700;
+      color: #42464b;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    span {
+      font-size: 12px;
+    }
+    p,
+    a {
+      margin-top: 24px;
+      font: 400 11px $secondary-font;
+      color: #9b9b9b;
+    }
+  }
+  &__bottom {
+    p {
+      font: 100 9px $main-font;
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+//------------ QUALITY STUDY -----------------
+.benefits-2 {
+  ul {
+    li {
+      font: 400 14px/2.5 $secondary-font;
+      @include respond('desktop') {
+        font-size: 16px;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+//------------ REMOTE MANAGEMENT -----------------
+.info {
+  &__content {
+    &--heading {
+      font: 400 1.8rem $main-font;
+      @include respond('desktop') {
+        font-size: 2.6rem;
+      }
+    }
+    &--text {
+      font: 400 1.3rem/2 $secondary-font;
+      color: #42464b;
+      @include respond('desktop') {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.process {
+  h2 {
+    font: 400 1.8rem $main-font;
+    color: #42464b;
+    @include respond('desktop') {
+      font-size: 2.6rem;
+    }
+  }
+  p {
+    font: 400 1.3rem/2 $secondary-font;
+    color: #42464b;
+    @include respond('desktop') {
+      font-size: 1.5rem;
+    }
+  }
+}
+.benefits {
+  h1 {
+    font: 700 1.8rem $main-font;
+    color: #42464b;
+  }
+  p {
+    font: 400 1.5rem/2.2 $secondary-font;
+    color: #fff;
+    @include respond('desktop') {
+      font-size: 2rem;
     }
   }
 }

@@ -1,0 +1,61 @@
+.gestion {
+  background-image: url('/dist/img/hero3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.info {
+  margin-top: 31px;
+  // .bg-layer {
+  //   width: 621px;
+  //   height: 411px;
+  //   background: #f1f1ec;
+  //   position: absolute;
+  //   z-index: -1;
+  // }
+  p.secondary-paragraph {
+    font-size: 14px;
+    margin-bottom: 60px;
+    @include respond('desktop') {
+      margin-bottom: 109px;
+    }
+  }
+  &__content {
+    hr {
+      border-top: 1px solid $main-green;
+      width: 100px;
+      margin-bottom: 26px;
+    }
+    &--heading {
+      margin-top: 20px;
+    }
+    &--text {
+    }
+  }
+}
+.process {
+  img {
+    height: 393px;
+  }
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+.benefits {
+  background-color: $main-green;
+  margin-top: 80px;
+  h1 {
+    /* Rectangle 26: */
+    background: #ffffff;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    width: 219px;
+    padding: 15px;
+    margin-top: -30px;
+  }
+  p {
+    padding: 60px 0;
+  }
+}

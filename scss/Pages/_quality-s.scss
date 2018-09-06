@@ -1,0 +1,19 @@
+.quality-s {
+  background-image: url('/dist/img/hero2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.benefits-2 {
+  margin-top: 51px;
+  ul {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    list-style-image: url('/dist/svg/check.svg');
+    li {
+      padding-left: 10px;
+    }
+  }
+}

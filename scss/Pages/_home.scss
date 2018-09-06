@@ -67,4 +67,61 @@
   @include respond('desktop') {
     padding: 0 90px;
   }
+  #myTabContent {
+    margin-top: 30px;
+  }
+  .tab-content {
+    &__image {
+      background-color: $bone;
+      img {
+        height: auto;
+        @include respond('tab-port') {
+          height: auto;
+        }
+        @include respond('desktop') {
+          height: 376px;
+        }
+      }
+    }
+    &__desc {
+      h1.heading--primary {
+        margin-top: 35px;
+      }
+      p.paragraph {
+        @include respond('tab-port') {
+          margin: 58px 0;
+          padding-left: 40px;
+          line-height: 2;
+        }
+      }
+      button.btn-text-green {
+        margin-top: 20px;
+        @include respond('tab-port') {
+          margin-top: 0;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+.logos {
+  padding: 28px 0;
+  a img {
+    margin-top: 20px;
+    height: 30px;
+    @include respond('tab-port') {
+      margin-top: 0;
+      height: auto;
+    }
+  }
+  .descriptions {
+    margin-top: 28px;
+    .card.card-body {
+      background-color: #42464b;
+      p {
+        color: #fff;
+      }
+    }
+  }
 }
