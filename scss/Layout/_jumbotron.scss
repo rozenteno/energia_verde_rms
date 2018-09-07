@@ -1,8 +1,8 @@
 .jumbotron {
-  min-height: 400px;
-  @include respond('tab-port') {
-    height: 45vh;
-  }
+  height: 400px;
+  // @include respond('tab-port') {
+  //   max-height: 400px;
+  // }
   @include respond('desktop') {
     height: 550px;
   }
@@ -13,13 +13,17 @@
     margin-left: 35px;
     @include respond('tab-port') {
       margin-left: 25px;
-      margin-top: 108px;
+      // margin-top: 108px;
+      margin-top: 103px;
       padding: 46px;
+      height: 264px;
     }
     @include respond('desktop') {
       margin-left: 45px;
-      margin-top: 188px;
+      // margin-top: 188px;
+      margin-top: 225px;
       padding: 46px;
+      height: 293px;
     }
     p {
       margin-top: 40px;

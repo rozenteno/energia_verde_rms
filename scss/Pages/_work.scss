@@ -1,0 +1,48 @@
+.work {
+  background-image: url('/dist/img/us-hero.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  @include respond('desktop') {
+    background-image: url('/dist/img/work-hero.jpg');
+  }
+  .jumbotron__content {
+    @include respond('desktop') {
+      margin-top: 27%;
+    }
+  }
+}
+.work-slogan {
+  margin-top: 30px;
+  @include respond('desktop') {
+    margin-top: 50px;
+  }
+  p {
+    margin-top: 30px;
+    @include respond('tab-port') {
+      margin-top: 25%;
+      padding-right: 65px;
+    }
+    @include respond('desktop') {
+      margin-top: 20%;
+      padding-right: 0;
+    }
+  }
+}
+.jobs {
+  margin-bottom: 30px;
+  @include respond('tab-port') {
+    padding-right: 35px;
+  }
+  h2.job--title {
+    @include respond('desktop') {
+      margin-top: 46px;
+      margin-bottom: 15px;
+    }
+  }
+  .requirements {
+    padding-left: 30px;
+  }
+}

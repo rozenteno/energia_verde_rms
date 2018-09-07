@@ -11,15 +11,21 @@
 p.paragraph {
   font: 400 1.6rem/1.5 $secondary-font;
   color: #42464b;
-
+  @include respond('tab-port') {
+    padding-right: 35px;
+  }
   a {
     color: $main-green;
   }
 }
 .main-paragraph {
   font: 400 14px/2 $secondary-font;
+  @include respond('tab-port') {
+    padding-right: 35px;
+  }
   @include respond('desktop') {
     font-size: 16px;
+    padding-right: 0;
   }
   span {
     font-weight: 700;
@@ -29,6 +35,9 @@ p.paragraph {
 .secondary-paragraph {
   font: 400 14px $secondary-font;
   color: #42464b;
+  @include respond('tab-port') {
+    padding-right: 35px;
+  }
   @include respond('desktop') {
     font-size: 18px;
   }
@@ -127,6 +136,9 @@ ul.navbar-nav {
     font: 700 2.4rem $main-font;
     color: #fff;
     opacity: 1;
+    @include respond('tab-port') {
+      font-size: 4rem;
+    }
     @include respond('desktop') {
       font-size: 5rem;
     }
@@ -424,6 +436,86 @@ ul.navbar-nav {
     color: #fff;
     @include respond('desktop') {
       font-size: 2rem;
+    }
+  }
+}
+
+//------------ MISION/VISION MANAGEMENT -----------------
+.m-v {
+  h1 {
+    font: 700 2.4rem $main-font;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    font: 400 1.4rem/2 $secondary-font;
+    text-align: center;
+    @include respond('desktop') {
+      font-size: 1.8rem;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+  .m {
+    h1,
+    p {
+      color: #fff;
+    }
+  }
+  .v {
+    h1,
+    p {
+      color: #000;
+    }
+  }
+}
+//------------ WORK WITH US -----------------
+.work-slogan {
+  p {
+    font: 400 2rem $secondary-font;
+    color: $main-green;
+    text-align: center;
+    @include respond('desktop') {
+      font-size: 3rem;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+.jobs {
+  h1 {
+    font: 700 2.4rem $main-font;
+    @include respond('desktop') {
+      font-size: 3.6rem;
+    }
+  }
+  .job--title {
+    font: 700 2rem $main-font;
+    color: $main-green;
+  }
+  .job--description {
+    font: 400 1.4rem/1.9 $secondary-font;
+    color: #42464b;
+    @include respond('desktop') {
+      font-size: 1.6rem;
+    }
+  }
+  .requirements {
+    h3 {
+      font: 700 1.8rem $main-font;
+      color: #42464b;
+    }
+    ul {
+      li {
+        font: 400 1.6rem/1.6 $secondary-font;
+        color: #42464b;
+      }
+    }
+    p {
+      font: 700 1.6rem $secondary-font;
+      color: #42464b;
     }
   }
 }

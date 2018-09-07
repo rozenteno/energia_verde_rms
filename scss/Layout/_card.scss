@@ -1,6 +1,12 @@
 .cards {
   margin-bottom: 46px;
   margin-top: -45px;
+  @include respond('tab-port') {
+    padding-right: 65px;
+  }
+  @include respond('desktop') {
+    padding-right: 0;
+  }
   .card {
     /* Rectangle 23: */
     margin-top: 20px;

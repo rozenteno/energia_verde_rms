@@ -3,6 +3,7 @@
   margin-bottom: 10rem;
   @include respond('tab-port') {
     margin-top: 8rem;
+    padding-right: 55px;
   }
   @include respond('desktop') {
     margin-top: 8.7rem;

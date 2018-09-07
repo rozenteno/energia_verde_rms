@@ -302,7 +302,8 @@ img.bg-image {
   margin-bottom: 10rem; }
   @media only screen and (min-width: 56.25em) {
     .solutions {
-      margin-top: 8rem; } }
+      margin-top: 8rem;
+      padding-right: 55px; } }
   @media only screen and (min-width: 85em) {
     .solutions {
       margin-top: 8.7rem; } }
@@ -421,8 +422,9 @@ img.bg-image {
     background-color: #fff; }
     .footer__bottom p {
       margin-bottom: 0; }
-      .footer__bottom p a {
-        color: #000; }
+      .footer__bottom p span {
+        color: #000;
+        font-weight: 700; }
   .footer__logo img {
     height: 55px;
     margin-bottom: 42px; }
@@ -438,12 +440,12 @@ img.bg-image {
   @media only screen and (min-width: 56.25em) {
     .footer__useful {
       margin-top: 30px; } }
+  @media only screen and (min-width: 85em) {
+    .footer__useful {
+      margin-left: 40px; } }
 
 .jumbotron {
-  min-height: 400px; }
-  @media only screen and (min-width: 56.25em) {
-    .jumbotron {
-      height: 45vh; } }
+  height: 400px; }
   @media only screen and (min-width: 85em) {
     .jumbotron {
       height: 550px; } }
@@ -455,13 +457,15 @@ img.bg-image {
     @media only screen and (min-width: 56.25em) {
       .jumbotron__content {
         margin-left: 25px;
-        margin-top: 108px;
-        padding: 46px; } }
+        margin-top: 103px;
+        padding: 46px;
+        height: 264px; } }
     @media only screen and (min-width: 85em) {
       .jumbotron__content {
         margin-left: 45px;
-        margin-top: 188px;
-        padding: 46px; } }
+        margin-top: 225px;
+        padding: 46px;
+        height: 293px; } }
     .jumbotron__content p {
       margin-top: 40px;
       padding-left: 20px;
@@ -470,6 +474,12 @@ img.bg-image {
 .cards {
   margin-bottom: 46px;
   margin-top: -45px; }
+  @media only screen and (min-width: 56.25em) {
+    .cards {
+      padding-right: 65px; } }
+  @media only screen and (min-width: 85em) {
+    .cards {
+      padding-right: 0; } }
   .cards .card {
     /* Rectangle 23: */
     margin-top: 20px;
@@ -532,14 +542,21 @@ body {
 p.paragraph {
   font: 400 1.6rem/1.5 "Raleway", sans-serif;
   color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    p.paragraph {
+      padding-right: 35px; } }
   p.paragraph a {
     color: #60ad5f; }
 
 .main-paragraph {
   font: 400 14px/2 "Raleway", sans-serif; }
+  @media only screen and (min-width: 56.25em) {
+    .main-paragraph {
+      padding-right: 35px; } }
   @media only screen and (min-width: 85em) {
     .main-paragraph {
-      font-size: 16px; } }
+      font-size: 16px;
+      padding-right: 0; } }
   .main-paragraph span {
     font-weight: 700;
     font-size: 16px; }
@@ -547,6 +564,9 @@ p.paragraph {
 .secondary-paragraph {
   font: 400 14px "Raleway", sans-serif;
   color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    .secondary-paragraph {
+      padding-right: 35px; } }
   @media only screen and (min-width: 85em) {
     .secondary-paragraph {
       font-size: 18px; } }
@@ -611,6 +631,9 @@ ul.navbar-nav {
   font: 700 2.4rem "Roboto", sans-serif;
   color: #fff;
   opacity: 1; }
+  @media only screen and (min-width: 56.25em) {
+    .jumbotron h1 {
+      font-size: 4rem; } }
   @media only screen and (min-width: 85em) {
     .jumbotron h1 {
       font-size: 5rem; } }
@@ -821,6 +844,67 @@ ul.navbar-nav {
     .benefits p {
       font-size: 2rem; } }
 
+.m-v h1 {
+  font: 700 2.4rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+.m-v p {
+  font: 400 1.4rem/2 "Raleway", sans-serif;
+  text-align: center; }
+  @media only screen and (min-width: 85em) {
+    .m-v p {
+      font-size: 1.8rem; } }
+  .m-v p span {
+    font-weight: 700; }
+
+.m-v .m h1,
+.m-v .m p {
+  color: #fff; }
+
+.m-v .v h1,
+.m-v .v p {
+  color: #000; }
+
+.work-slogan p {
+  font: 400 2rem "Raleway", sans-serif;
+  color: #60ad5f;
+  text-align: center; }
+  @media only screen and (min-width: 85em) {
+    .work-slogan p {
+      font-size: 3rem; } }
+  .work-slogan p span {
+    font-weight: 700; }
+
+.jobs h1 {
+  font: 700 2.4rem "Roboto", sans-serif; }
+  @media only screen and (min-width: 85em) {
+    .jobs h1 {
+      font-size: 3.6rem; } }
+
+.jobs .job--title {
+  font: 700 2rem "Roboto", sans-serif;
+  color: #60ad5f; }
+
+.jobs .job--description {
+  font: 400 1.4rem/1.9 "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .jobs .job--description {
+      font-size: 1.6rem; } }
+
+.jobs .requirements h3 {
+  font: 700 1.8rem "Roboto", sans-serif;
+  color: #42464b; }
+
+.jobs .requirements ul li {
+  font: 400 1.6rem/1.6 "Raleway", sans-serif;
+  color: #42464b; }
+
+.jobs .requirements p {
+  font: 700 1.6rem "Raleway", sans-serif;
+  color: #42464b; }
+
 @media only screen and (min-width: 56.25em) {
   .motto {
     position: relative; } }
@@ -922,7 +1006,7 @@ ul.navbar-nav {
   .logos .descriptions {
     margin-top: 28px; }
     .logos .descriptions .card.card-body {
-      background-color: #42464b; }
+      background-color: #53a052; }
       .logos .descriptions .card.card-body p {
         color: #fff; }
 
@@ -953,6 +1037,12 @@ ul.navbar-nav {
 
 .info {
   margin-top: 31px; }
+  @media only screen and (min-width: 56.25em) {
+    .info {
+      padding-right: 65px; } }
+  @media only screen and (min-width: 85em) {
+    .info {
+      padding-right: 0; } }
   .info p.secondary-paragraph {
     font-size: 14px;
     margin-bottom: 60px; }
@@ -965,6 +1055,8 @@ ul.navbar-nav {
     margin-bottom: 26px; }
   .info__content--heading {
     margin-top: 20px; }
+  .info__content--text {
+    padding-right: 35px; }
 
 .process img {
   height: 393px; }
@@ -976,6 +1068,9 @@ ul.navbar-nav {
 .benefits {
   background-color: #60ad5f;
   margin-top: 80px; }
+  @media only screen and (min-width: 56.25em) {
+    .benefits {
+      padding-right: 45px; } }
   .benefits h1 {
     /* Rectangle 26: */
     background: #ffffff;
@@ -987,47 +1082,103 @@ ul.navbar-nav {
     padding: 60px 0; }
 
 .us {
-  background-image: url("/dist/img/us-hero.jpg");
+  background-image: url("/dist/img/us-hero4.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center; }
 
-.m-v {
-  margin: 0;
-  border-radius: 0;
-  margin-top: 30px; }
+.us__content p {
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 56.25em) {
+    .us__content p {
+      padding-right: 30px; } }
   @media only screen and (min-width: 85em) {
-    .m-v {
-      margin: 50px 0 50px;
-      padding-left: 150px;
-      padding-right: 150px; }
-      .m-v h2 {
-        padding: 40px 60px 100px; }
-      .m-v [class*='col-md'] {
-        padding: 0; } }
+    .us__content p {
+      font-size: 1.9rem; }
+      .us__content p p:first-child {
+        margin-top: 50px; } }
+
+.m-v {
+  margin: 30px 0 50px 0;
+  border-radius: 0;
+  width: 100%; }
+  @media only screen and (min-width: 56.25em) {
+    .m-v [class*='col-md'] {
+      padding: 0; }
+    .m-v .m,
+    .m-v .v {
+      width: 406px;
+      padding: 40px 50px 76px 50px; }
+      .m-v .m p,
+      .m-v .v p {
+        margin-top: 46px; } }
   .m-v .m {
-    padding: 40px;
     background-color: #60ad5f;
     box-shadow: 0 2px 4px 0 rgba(126, 126, 126, 0.5);
-    height: 100%; }
-    .m-v .m h1 {
-      font-size: 36px; }
+    height: 100%;
+    padding: 40px; }
+    @media only screen and (min-width: 56.25em) {
+      .m-v .m {
+        box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+        margin-left: 80px; } }
     @media only screen and (min-width: 85em) {
       .m-v .m {
-        box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1); } }
+        margin-left: 163px; } }
   .m-v .v {
     /* Rectangle 25 Copy: */
     background: #fcfcfc;
     box-shadow: 0 1px 11px 0 rgba(126, 126, 126, 0.15);
-    color: #fff;
+    height: 100%;
     padding: 40px; }
-    .m-v .v h1 {
-      margin: 0; }
+
+.land {
+  background-image: url("/dist/img/land-hero.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.work {
+  background-image: url("/dist/img/us-hero.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+  @media only screen and (min-width: 85em) {
+    .work {
+      background-image: url("/dist/img/work-hero.jpg"); } }
+  @media only screen and (min-width: 85em) {
+    .work .jumbotron__content {
+      margin-top: 27%; } }
+
+.work-slogan {
+  margin-top: 30px; }
+  @media only screen and (min-width: 85em) {
+    .work-slogan {
+      margin-top: 50px; } }
+  .work-slogan p {
+    margin-top: 30px; }
+    @media only screen and (min-width: 56.25em) {
+      .work-slogan p {
+        margin-top: 25%;
+        padding-right: 65px; } }
     @media only screen and (min-width: 85em) {
-      .m-v .v {
-        height: 410px;
-        width: 420px; }
-        .m-v .v h1 {
-          padding-top: 40px; } }
+      .work-slogan p {
+        margin-top: 20%;
+        padding-right: 0; } }
+
+.jobs {
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 56.25em) {
+    .jobs {
+      padding-right: 35px; } }
+  @media only screen and (min-width: 85em) {
+    .jobs h2.job--title {
+      margin-top: 46px;
+      margin-bottom: 15px; } }
+  .jobs .requirements {
+    padding-left: 30px; }

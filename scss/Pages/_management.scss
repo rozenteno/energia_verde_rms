@@ -15,6 +15,12 @@
   //   position: absolute;
   //   z-index: -1;
   // }
+  @include respond('tab-port') {
+    padding-right: 65px;
+  }
+  @include respond('desktop') {
+    padding-right: 0;
+  }
   p.secondary-paragraph {
     font-size: 14px;
     margin-bottom: 60px;
@@ -32,6 +38,7 @@
       margin-top: 20px;
     }
     &--text {
+      padding-right: 35px;
     }
   }
 }
@@ -47,6 +54,9 @@
 .benefits {
   background-color: $main-green;
   margin-top: 80px;
+  @include respond('tab-port') {
+    padding-right: 45px;
+  }
   h1 {
     /* Rectangle 26: */
     background: #ffffff;

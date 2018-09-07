@@ -1,58 +1,80 @@
 .us {
-  background-image: url('/dist/img/us-hero.jpg');
+  background-image: url('/dist/img/us-hero4.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
 }
-.m-v {
-  margin: 0;
-  border-radius: 0;
-  margin-top: 30px;
-  @include respond('desktop') {
-    margin: 50px 0 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    h2 {
-      padding: 40px 60px 100px;
+.us__content {
+  // img {
+  //   height: 400px;
+  // }
+  p {
+    font-size: 1.5rem;
+    @include respond('tab-port') {
+      padding-right: 30px;
     }
+    @include respond('desktop') {
+      font-size: 1.9rem;
+      p:first-child {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+.m-v {
+  margin: 30px 0 50px 0;
+  border-radius: 0;
+
+  width: 100%;
+  @include respond('tab-port') {
+    // margin: 50px 0 50px;
+    // padding-left: 150px;
+    // padding-right: 150px;
+    // h2 {
+    //   padding: 40px 60px 100px;
+    // }
     [class*='col-md'] {
       padding: 0;
     }
+    .m,
+    .v {
+      width: 406px;
+      padding: 40px 50px 76px 50px;
+      p {
+        margin-top: 46px;
+      }
+      // height: 137px;
+    }
   }
   .m {
-    padding: 40px;
     background-color: $main-green;
     box-shadow: 0 2px 4px 0 rgba(126, 126, 126, 0.5);
     height: 100%;
-    h1 {
-      font-size: 36px;
+    padding: 40px;
+    @include respond('tab-port') {
+      box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+      margin-left: 80px;
+      // border-radius: 4px;
     }
     @include respond('desktop') {
-      box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
-      // border-radius: 4px;
+      margin-left: 163px;
     }
   }
   .v {
     /* Rectangle 25 Copy: */
     background: #fcfcfc;
     box-shadow: 0 1px 11px 0 rgba(126, 126, 126, 0.15);
-    color: #fff;
+    height: 100%;
     padding: 40px;
-    h1 {
-      margin: 0;
-    }
     @include respond('desktop') {
       // margin-top: 20px;
     }
     @include respond('desktop') {
       // margin-top: 50px;
-      height: 410px;
-      width: 420px;
-      h1 {
-        padding-top: 40px;
-      }
+      // height: 410px;
+      // width: 420px;
     }
   }
 }

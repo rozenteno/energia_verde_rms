@@ -9,8 +9,9 @@
     background-color: #fff;
     p {
       margin-bottom: 0;
-      a {
+      span {
         color: #000;
+        font-weight: 700;
       }
     }
   }
@@ -42,6 +43,9 @@
     // }
     @include respond('tab-port') {
       margin-top: 30px;
+    }
+    @include respond('desktop') {
+      margin-left: 40px;
     }
   }
 }
