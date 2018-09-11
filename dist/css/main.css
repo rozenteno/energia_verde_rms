@@ -41,6 +41,33 @@ button.btn-solutions {
   button.btn-solutions i {
     color: #60ad5f; }
 
+button.btn-form {
+  background-color: #60ad5f;
+  border: none;
+  padding: 1.6rem 4rem; }
+  button.btn-form:hover {
+    background-color: #42464b; }
+
+a.btn-quote {
+  font: 700 2rem "Roboto", sans-serif;
+  color: #60ad5f;
+  text-transform: uppercase;
+  border-bottom: 2px solid #60ad5f;
+  transition: all 0.3s; }
+  a.btn-quote:hover {
+    text-decoration: none;
+    color: #427f41;
+    border-bottom: 2px solid #427f41; }
+
+a.btn-download {
+  font: 700 2rem "Roboto", sans-serif;
+  color: #758cae;
+  text-transform: capitalize;
+  transition: color 0.3s; }
+  a.btn-download:hover {
+    text-decoration: none;
+    color: #4f6687; }
+
 nav.navbar {
   height: 6rem;
   background-color: #fff;
@@ -463,13 +490,41 @@ img.bg-image {
     @media only screen and (min-width: 85em) {
       .jumbotron__content {
         margin-left: 45px;
-        margin-top: 225px;
+        margin-top: 220px;
         padding: 46px;
         height: 293px; } }
     .jumbotron__content p {
       margin-top: 40px;
       padding-left: 20px;
       border-left: 2px solid #60ad5f; }
+  .jumbotron__content--short {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px;
+    margin-top: 200px; }
+    @media only screen and (min-width: 56.25em) {
+      .jumbotron__content--short {
+        margin-left: 25px;
+        margin-top: 200px;
+        padding: 46px; } }
+    @media only screen and (min-width: 85em) {
+      .jumbotron__content--short {
+        margin-left: 45px;
+        margin-top: 370px;
+        padding: 46px;
+        height: 100%; } }
+  .jumbotron__products {
+    background-color: #f8f8f8;
+    height: 40vh;
+    margin-bottom: 67px; }
+    @media only screen and (min-width: 85em) {
+      .jumbotron__products {
+        padding: 60px 214px; } }
+    .jumbotron__products h2 {
+      margin-top: 50px; }
+    .jumbotron__products p {
+      margin-top: 30px; }
 
 .cards {
   margin-bottom: 46px;
@@ -490,6 +545,56 @@ img.bg-image {
     padding: 54px; }
     .cards .card ul {
       list-style-image: url("/dist/svg/check.svg"); }
+
+.contact h2 {
+  margin-top: 50px; }
+
+.contact h3 {
+  margin-top: 20px; }
+
+.contact a i {
+  margin-top: 15px; }
+
+@media only screen and (min-width: 56.25em) {
+  .contact {
+    margin-right: 70px; } }
+
+@media only screen and (min-width: 85em) {
+  .contact {
+    margin-right: 0; } }
+
+.contact .contact-form {
+  margin: 20px 0;
+  background-color: #fcfcfc;
+  box-shadow: rgba(1, 58, 81, 0.06) 0px 3px 10px 0px;
+  padding: 50px; }
+  .contact .contact-form .form-group input:focus,
+  .contact .contact-form .form-group textarea:focus,
+  .contact .contact-form .form-group select:focus {
+    outline: none;
+    box-shadow: none; }
+  .contact .contact-form .form-group input[type='text'],
+  .contact .contact-form .form-group input[type='email'],
+  .contact .contact-form .form-group textarea[type='text'].form-control {
+    background-color: #fcfcfc;
+    margin: 0.425em 0 1.5625em;
+    padding: 7.5px 3px;
+    border: none;
+    border-bottom: 2px solid #60ad5f;
+    border-radius: 0;
+    resize: none; }
+
+.products .product-card {
+  /* main_menu_bg copy: */
+  background: #ffffff;
+  box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+  border-radius: 15px;
+  padding: 29px; }
+  .products .product-card-image img {
+    height: 234px; }
+  .products .product-card .btn--section {
+    padding: 28.5px 15px 0;
+    border-top: 1px solid #dddddd; }
 
 .vl {
   border-left: 1px solid #1b4079;
@@ -571,6 +676,12 @@ p.paragraph {
     .secondary-paragraph {
       font-size: 18px; } }
 
+.product-category-description {
+  font: 400 1.6rem/2 "Raleway", sans-serif;
+  color: #42464b;
+  letter-spacing: 0.16px;
+  margin-bottom: 57px; }
+
 .cards .card ul li {
   font: 400 1.4rem/2 "Raleway", sans-serif;
   color: #42464b; }
@@ -645,6 +756,18 @@ ul.navbar-nav {
     .jumbotron p {
       font-size: 1.4rem; } }
 
+.jumbotron__products--heading {
+  font: 700 2.6rem "Roboto", sans-serif;
+  color: #9b9b9b; }
+
+.jumbotron__products--category {
+  font: 700 5rem "Roboto", sans-serif;
+  color: #42464b; }
+
+.jumbotron__products p {
+  font: 400 1.8rem "Raleway", sans-serif;
+  color: #42464b; }
+
 .hero-sidebar {
   font-family: "Roboto", sans-serif;
   z-index: 4;
@@ -697,6 +820,10 @@ ul.navbar-nav {
     .btn-text-white {
       font-weight: 400;
       font-size: 1.3rem; } }
+
+button.btn-form {
+  font: 700 1.6rem "Roboto", sans-serif;
+  color: #fff; }
 
 .solutions__container--content {
   font: 400 1.6rem/2 "Raleway", sans-serif;
@@ -904,6 +1031,57 @@ ul.navbar-nav {
 .jobs .requirements p {
   font: 700 1.6rem "Raleway", sans-serif;
   color: #42464b; }
+
+.contact h2 {
+  font: 700 3rem "Roboto", sans-serif;
+  color: #60ad5f; }
+  @media only screen and (min-width: 85em) {
+    .contact h2 {
+      font-size: 4rem; } }
+
+.contact h3 {
+  font: 700 2rem "Roboto", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .contact h3 {
+      font-size: 3rem; } }
+
+.contact a {
+  font: 400 1.5rem "Raleway", sans-serif;
+  color: #42464b; }
+  @media only screen and (min-width: 85em) {
+    .contact a {
+      font-size: 2rem; } }
+
+.contact-form .form-group .form-control-label {
+  font: 700 1.8rem "Roboto", sans-serif;
+  color: #42464b; }
+
+.contact-form .form-group input[type='text'],
+.contact-form .form-group input[type='email'],
+.contact-form .form-group textarea[type='text'] {
+  font: 400 1.6rem "Raleway", sans-serif; }
+
+.products h2.product-subcategory {
+  font: 700 1.6rem "Roboto", sans-serif;
+  color: #60ad5f;
+  text-transform: capitalize;
+  padding-left: 70px;
+  margin-bottom: 47px; }
+
+.product-card--category {
+  font: 700 1.3rem "Roboto", sans-serif;
+  color: #60ad5f;
+  text-transform: uppercase;
+  padding: 13px 30px; }
+
+.product-card--name {
+  font: 700 1.8rem "Roboto", sans-serif;
+  color: #000; }
+
+.product-card--description {
+  font: 400 1.5rem/1.7 "Raleway", sans-serif;
+  color: #9b9b9b; }
 
 @media only screen and (min-width: 56.25em) {
   .motto {

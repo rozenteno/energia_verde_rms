@@ -45,7 +45,8 @@
       <span class="lang">ES</span>
       <span class="sidebar--message">¡Contáctanos!</span>
       <div class="sidebar__bottom sidebar__button">
-        <i class="sidebar__bottom__icon far fa-comments "></i>
+        <a href="contacto.html"> <i class="sidebar__bottom__icon far fa-comments "></i>
+        </a>
       </div>
     </sidebar>
     <!-- END of Sidebar -->
@@ -104,7 +105,7 @@
             </a>
             <div class="dropdown-menu products" aria-labelledby="navbarDropdown">
               <div class="container">
-                <a class="dropdown-item" href="#">Bancos de Capacitores y Filtros</a>
+                <a class="dropdown-item" href="./productos/capacitores-filtros.html">Bancos de Capacitores y Filtros</a>
                 <a class="dropdown-item" href="#">Sistemas de Acoplamiento</a>
                 <a class="dropdown-item" href="#">Protección Transitoria</a>
                 <a class="dropdown-item" href="#">Equipos de Medición</a>
@@ -117,7 +118,7 @@
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bolsa de Trabajo</a>
+            <a class="nav-link" href="bolsa.html">Bolsa de Trabajo</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -382,7 +383,7 @@
               de
               las empresas - encuentran sustento en nuestra vasta experiencia, así como en nuestra extensa gama de
               novedosos
-              e innovadores <a href="products.html">productos</a>, elaborados por las marcas líderes en el mercado
+              e innovadores productos, elaborados por las marcas líderes en el mercado
               eléctrico,
               tanto nacional como internacional.</p>
           </div>
@@ -678,13 +679,10 @@
                       <div class="tab-content__desc">
                         <h1 class="heading--primary">Protección Transitoria</h1>
                         <p class="paragraph">
-                          Un banco fijo de capacitores es muy útil cuando se requiere mejorar el factor de potencia de
-                          una carga o un grupo de cargas
-                          cuya demanda de potencia reactiva es básicamente constante. El banco fijo siempre estará
-                          conectado
-                          a la línea de alimentación, pero dependiendo de la aplicación, estos pueden ser conectados o
-                          desconectados
-                          con los arrancadores de motores.
+                          Se denominan sobretensiones transitorias a los aumentos de tensión muy elevados - y de corta
+                          duración - originados por conmutaciones defectuosas del sistema eléctrico o por el impacto
+                          de un rayo; ya sea este directo o indirecto, el impacto de un rayo provoca un pico de
+                          tensión que se propaga por la red provocando el deterioro de los receptores.
                         </p>
                         <button class="btn btn-text-green">ver productos</button>
                       </div>
@@ -704,13 +702,10 @@
                       <div class="tab-content__desc">
                         <h1 class="heading--primary">Equipos de Medición</h1>
                         <p class="paragraph">
-                          Un banco fijo de capacitores es muy útil cuando se requiere mejorar el factor de potencia de
-                          una carga o un grupo de cargas
-                          cuya demanda de potencia reactiva es básicamente constante. El banco fijo siempre estará
-                          conectado
-                          a la línea de alimentación, pero dependiendo de la aplicación, estos pueden ser conectados o
-                          desconectados
-                          con los arrancadores de motores.
+                          Los medidores de energía eléctrica son aparatos utilizados para la medición del consumo de
+                          energía. Existen varios tipos de medidores, y estos varían dependiendo de su diseño, el
+                          tipo de energía que miden, la clase de precisión y el tipo de conexión a la red eléctrica
+                          que presentan.
                         </p>
                         <button class="btn btn-text-green">ver productos</button>
                       </div>
@@ -910,7 +905,7 @@
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>Copyright. Todos los derechos reservados <span>
+        <p>Copyright. Todos los derechos reservados <span data-toggle="tooltip" data-placement="top" title="¡Búscanos en inquid.co!">
             < /> con <i class="fa fa-heart" aria-hidden="true"></i> por Inquid</span>
         </p>
       </div>
@@ -1213,6 +1208,7 @@
       $(document).on('click', function () {
         $('.collapse').collapse('hide');
       })
+      $('[data-toggle="tooltip"]').tooltip();
       // if ($(".nav-link").hasClass('active')) {
       //   $('.nav-link').find('span').addClass('active');
       // }

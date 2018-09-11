@@ -21,7 +21,7 @@
     @include respond('desktop') {
       margin-left: 45px;
       // margin-top: 188px;
-      margin-top: 225px;
+      margin-top: 220px;
       padding: 46px;
       height: 293px;
     }
@@ -29,6 +29,40 @@
       margin-top: 40px;
       padding-left: 20px;
       border-left: 2px solid #60ad5f;
+    }
+  }
+  &__content--short {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px;
+    margin-top: 200px;
+    @include respond('tab-port') {
+      margin-left: 25px;
+      // margin-top: 108px;
+      margin-top: 200px;
+      padding: 46px;
+    }
+    @include respond('desktop') {
+      margin-left: 45px;
+      // margin-top: 188px;
+      margin-top: 370px;
+      padding: 46px;
+      height: 100%;
+    }
+  }
+  &__products {
+    background-color: #f8f8f8;
+    height: 40vh;
+    margin-bottom: 67px;
+    @include respond('desktop') {
+      padding: 60px 214px;
+    }
+    h2 {
+      margin-top: 50px;
+    }
+    p {
+      margin-top: 30px;
     }
   }
 }

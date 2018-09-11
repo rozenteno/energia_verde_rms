@@ -1,0 +1,42 @@
+.contact {
+  h2 {
+    margin-top: 50px;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  a i {
+    margin-top: 15px;
+  }
+  @include respond('tab-port') {
+    margin-right: 70px;
+  }
+  @include respond('desktop') {
+    margin-right: 0;
+  }
+  .contact-form {
+    margin: 20px 0;
+    background-color: #fcfcfc;
+    box-shadow: rgba(1, 58, 81, 0.06) 0px 3px 10px 0px;
+    padding: 50px;
+    .form-group {
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      input[type='text'],
+      input[type='email'],
+      textarea[type='text'].form-control {
+        background-color: #fcfcfc;
+        margin: 0.425em 0 1.5625em;
+        padding: 7.5px 3px;
+        border: none;
+        border-bottom: 2px solid $main-green;
+        border-radius: 0;
+        resize: none;
+      }
+    }
+  }
+}

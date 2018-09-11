@@ -42,7 +42,12 @@ p.paragraph {
     font-size: 18px;
   }
 }
-
+.product-category-description {
+  font: 400 1.6rem/2 $secondary-font;
+  color: #42464b;
+  letter-spacing: 0.16px;
+  margin-bottom: 57px;
+}
 // ------------ CARD -----------------
 .cards {
   .card {
@@ -151,6 +156,20 @@ ul.navbar-nav {
     }
   }
 }
+.jumbotron__products {
+  &--heading {
+    font: 700 2.6rem $main-font;
+    color: #9b9b9b;
+  }
+  &--category {
+    font: 700 5rem $main-font;
+    color: #42464b;
+  }
+  p {
+    font: 400 1.8rem $secondary-font;
+    color: #42464b;
+  }
+}
 
 //------------ HERO SIDEBAR -----------------
 .hero-sidebar {
@@ -215,7 +234,10 @@ ul.navbar-nav {
     font-size: 1.3rem;
   }
 }
-
+button.btn-form {
+  font: 700 1.6rem $main-font;
+  color: #fff;
+}
 //------------ SOLUTIONS SECTION -----------------
 .solutions {
   &__container {
@@ -517,5 +539,70 @@ ul.navbar-nav {
       font: 700 1.6rem $secondary-font;
       color: #42464b;
     }
+  }
+}
+//------------ CONTACT -----------------
+.contact {
+  h2 {
+    font: 700 3rem $main-font;
+    color: $main-green;
+    @include respond('desktop') {
+      font-size: 4rem;
+    }
+  }
+  h3 {
+    font: 700 2rem $main-font;
+    color: #42464b;
+    @include respond('desktop') {
+      font-size: 3rem;
+    }
+  }
+  a {
+    font: 400 1.5rem $secondary-font;
+    color: #42464b;
+    @include respond('desktop') {
+      font-size: 2rem;
+    }
+  }
+}
+.contact-form {
+  .form-group {
+    .form-control-label {
+      font: 700 1.8rem $main-font;
+      color: #42464b;
+    }
+    input[type='text'],
+    input[type='email'],
+    textarea[type='text'] {
+      font: 400 1.6rem $secondary-font;
+    }
+  }
+}
+
+//------------ PRODUCTS PAGE -----------------
+.products {
+  h2.product-subcategory {
+    font: 700 1.6rem $main-font;
+    color: $main-green;
+    text-transform: capitalize;
+    padding-left: 70px;
+    margin-bottom: 47px;
+  }
+}
+//------------ PRODUCT CARD -----------------
+.product-card {
+  &--category {
+    font: 700 1.3rem $main-font;
+    color: $main-green;
+    text-transform: uppercase;
+    padding: 13px 30px;
+  }
+  &--name {
+    font: 700 1.8rem $main-font;
+    color: #000;
+  }
+  &--description {
+    font: 400 1.5rem/1.7 $secondary-font;
+    color: #9b9b9b;
   }
 }

@@ -28,3 +28,34 @@ button.btn-solutions {
     color: $main-green;
   }
 }
+
+button.btn-form {
+  background-color: $main-green;
+  border: none;
+  padding: 1.6rem 4rem;
+  &:hover {
+    background-color: #42464b;
+  }
+}
+a.btn-quote {
+  font: 700 2rem $main-font;
+  color: $main-green;
+  text-transform: uppercase;
+  border-bottom: 2px solid $main-green;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: darken($main-green, 15%);
+    border-bottom: 2px solid darken($main-green, 15%);
+  }
+}
+a.btn-download {
+  font: 700 2rem $main-font;
+  color: #758cae;
+  text-transform: capitalize;
+  transition: color 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: darken(#758cae, 15%);
+  }
+}

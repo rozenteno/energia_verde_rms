@@ -1,0 +1,18 @@
+.products {
+  .product-card {
+    /* main_menu_bg copy: */
+    background: #ffffff;
+    box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+    border-radius: 15px;
+    padding: 29px;
+    &-image {
+      img {
+        height: 234px;
+      }
+    }
+    .btn--section {
+      padding: 28.5px 15px 0;
+      border-top: 1px solid #dddddd;
+    }
+  }
+}
