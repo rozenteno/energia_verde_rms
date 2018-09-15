@@ -11,6 +11,11 @@
     }
   }
   .owl-carousel {
+    @include respond('desktop') {
+      .owl-nav {
+        font-size: 24px;
+      }
+    }
     .owl-stage-outer {
       @include respond('desktop') {
         // height: 80vh !important;
@@ -31,7 +36,7 @@
     .item__container {
       padding: 68px 29px 42px 115px;
       @include respond('desktop') {
-        padding: 85px 0 85px 145px;
+        padding: 180px 0 85px 145px;
       }
       .text-container {
         margin: 55px 0;
@@ -40,7 +45,7 @@
           margin: 40px 0;
         }
         @include respond('desktop') {
-          margin: 70px 0;
+          margin: 35px 0 50px 0;
         }
       }
     }

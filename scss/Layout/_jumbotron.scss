@@ -21,12 +21,37 @@
     @include respond('desktop') {
       margin-left: 45px;
       // margin-top: 188px;
-      margin-top: 220px;
+      // margin-top: 260px;
+      margin-top: 19%;
       padding: 46px;
-      height: 293px;
+      padding: 30px 46px 30px 46px;
+      height: 253px;
+    }
+    h1 {
+      margin-top: 10px;
     }
     p {
-      margin-top: 40px;
+      margin-top: 20px;
+      padding-left: 20px;
+      border-left: 2px solid #60ad5f;
+    }
+  }
+  &__content--us {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px;
+    @include respond('desktop') {
+      margin-left: 45px;
+      // margin-top: 188px;
+      // margin-top: 260px;
+      margin-top: 310px;
+      // padding: 46px;
+      padding: 35px 46px 30px 46px;
+      height: 203px;
+    }
+    p {
+      margin-top: 25px;
       padding-left: 20px;
       border-left: 2px solid #60ad5f;
     }
@@ -60,9 +85,19 @@
     }
     h2 {
       margin-top: 50px;
+      @include respond('desktop') {
+        letter-spacing: 1.7px;
+      }
     }
     p {
       margin-top: 30px;
+    }
+    &--category {
+      @include respond('desktop') {
+        img {
+          margin-top: -10px;
+        }
+      }
     }
   }
 }

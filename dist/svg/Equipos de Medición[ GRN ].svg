@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="31px" viewBox="0 0 42 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Equipos de Medición[ GRN ]</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Escritorio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Productos_Bancos" transform="translate(-213.000000, -280.000000)">
+            <g id="Equipos-de-Medición[-GRN-]" transform="translate(214.000000, 281.000000)">
+                <path d="M7.46677016,25.7980354 L1.88997769,25.7980354 C0.846026972,25.7980354 0,24.9700065 0,23.9482646 C1.10216358,18.2090373 1.21082759,11.9646365 0,5.05173543 C0,4.02999345 0.846026972,3.20196464 1.88997769,3.20196464 L7.46677016,3.20196464 C10.8974483,1.20026195 15.2556515,0 20.0019404,0 C31.0468614,0 40,6.49129011 40,14.4981009 C40,22.5049116 31.0468614,29 20.0019404,29 C15.2556515,29 10.8974483,27.8035363 7.46677016,25.7980354 Z" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <path d="M31.6185233,21 L7.3852664,21 C7.17336988,21 7,20.8400203 7,20.6444896 L7,7.35551041 C7,7.15997969 7.17336988,7 7.3852664,7 L31.6146706,7 C31.8265671,7 31.999937,7.15997969 31.999937,7.35551041 L31.999937,20.6409345 C32.0037897,20.8400203 31.8304198,21 31.6185233,21 Z" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <path d="M14.5,20 C17.5375661,20 20,17.5375661 20,14.5 C20,11.4624339 17.5375661,9 14.5,9 C11.4624339,9 9,11.4624339 9,14.5 C9,17.5375661 11.4624339,20 14.5,20 Z" id="Oval" stroke="#60AD5F" stroke-width="2" stroke-dasharray="10.0572,10.0572"></path>
+                <path d="M24,11 L31,11" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <path d="M24,12 L31,12" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <path d="M24,13 L31,13" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <path d="M24,15 L31,15" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                <g id="Group" transform="translate(15.000000, 9.000000)">
+                    <path d="M0,6.125 L1.115625,1.19024823" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                    <polygon id="Shape" fill="#60AD5F" fill-rule="nonzero" points="1.38125 0.0217198582 1.49375 1.88093972 1.096875 1.28147163 0.525 1.45957447"></polygon>
+                </g>
+                <g id="Group" transform="translate(15.000000, 15.000000)">
+                    <path d="M0,0.15625 L1.81762452,0.65625" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                    <polygon id="Shape" fill="#60AD5F" fill-rule="nonzero" points="2.6605364 0.771875 1.36091954 0.990625 1.7532567 0.5625 1.5816092 0"></polygon>
+                </g>
+                <g id="Group" transform="translate(11.000000, 15.000000)">
+                    <path d="M5,0 L1.18695652,1.09772727" id="Shape" stroke="#60AD5F" stroke-width="2"></path>
+                    <polygon id="Shape" fill="#60AD5F" fill-rule="nonzero" points="0.0347826087 1.43181818 1.41304348 0.443181818 1.27391304 1.07386364 1.9 1.48295455"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

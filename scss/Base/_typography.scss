@@ -46,7 +46,26 @@ p.paragraph {
   font: 400 1.6rem/2 $secondary-font;
   color: #42464b;
   letter-spacing: 0.16px;
-  margin-bottom: 57px;
+  span {
+    font-weight: 700;
+  }
+  // margin-bottom: 57px;
+}
+.article-heading {
+  font: 700 1.4rem $main-font;
+  color: $main-green;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.article-question {
+  font: 700 2.4rem $main-font;
+  color: #42464b;
+  margin: 45px 0;
+}
+p.article--summary {
+  font: 400 1.8rem $secondary-font;
+  color: $main-green;
+  margin-top: 40px;
 }
 // ------------ CARD -----------------
 .cards {
@@ -426,6 +445,9 @@ button.btn-form {
     &--text {
       font: 400 1.3rem/2 $secondary-font;
       color: #42464b;
+      span {
+        font-weight: 700;
+      }
       @include respond('desktop') {
         font-size: 1.5rem;
       }
@@ -440,13 +462,13 @@ button.btn-form {
       font-size: 2.6rem;
     }
   }
-  p {
-    font: 400 1.3rem/2 $secondary-font;
-    color: #42464b;
-    @include respond('desktop') {
-      font-size: 1.5rem;
-    }
-  }
+  // p {
+  //   font: 400 1.3rem/2 $secondary-font;
+  //   color: #42464b;
+  //   @include respond('desktop') {
+  //     font-size: 1.5rem;
+  //   }
+  // }
 }
 .benefits {
   h1 {
@@ -456,6 +478,9 @@ button.btn-form {
   p {
     font: 400 1.5rem/2.2 $secondary-font;
     color: #fff;
+    span {
+      font-weight: 700;
+    }
     @include respond('desktop') {
       font-size: 2rem;
     }
@@ -520,6 +545,9 @@ button.btn-form {
   .job--description {
     font: 400 1.4rem/1.9 $secondary-font;
     color: #42464b;
+    span {
+      font-weight: 700;
+    }
     @include respond('desktop') {
       font-size: 1.6rem;
     }
@@ -585,8 +613,9 @@ button.btn-form {
     font: 700 1.6rem $main-font;
     color: $main-green;
     text-transform: capitalize;
-    padding-left: 70px;
-    margin-bottom: 47px;
+    padding-left: 200px;
+    // margin-bottom: 47px;
+    margin-top: 47px;
   }
 }
 //------------ PRODUCT CARD -----------------
@@ -604,5 +633,6 @@ button.btn-form {
   &--description {
     font: 400 1.5rem/1.7 $secondary-font;
     color: #9b9b9b;
+    text-align: justify;
   }
 }

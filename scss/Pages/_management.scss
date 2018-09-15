@@ -30,9 +30,14 @@
   }
   &__content {
     hr {
-      border-top: 1px solid $main-green;
-      width: 100px;
+      border-bottom: 1.5px solid $main-green;
+      max-width: 30%;
       margin-bottom: 26px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      text-align: left;
+      margin-left: 0;
     }
     &--heading {
       margin-top: 20px;

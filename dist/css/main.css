@@ -291,6 +291,9 @@ nav.navbar {
   .home-full-slider-wrapper .owl-carousel.owl-item img {
     display: block;
     width: 100%; }
+  @media only screen and (min-width: 85em) {
+    .home-full-slider-wrapper .owl-carousel .owl-nav {
+      font-size: 24px; } }
   .home-full-slider-wrapper .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
     height: 400px; }
     @media only screen and (min-width: 85em) {
@@ -301,7 +304,7 @@ nav.navbar {
     padding: 68px 29px 42px 115px; }
     @media only screen and (min-width: 85em) {
       .home-full-slider-wrapper .owl-carousel .item__container {
-        padding: 85px 0 85px 145px; } }
+        padding: 180px 0 85px 145px; } }
     .home-full-slider-wrapper .owl-carousel .item__container .text-container {
       margin: 55px 0;
       border-left: 2px solid #60ad5f; }
@@ -310,7 +313,7 @@ nav.navbar {
           margin: 40px 0; } }
       @media only screen and (min-width: 85em) {
         .home-full-slider-wrapper .owl-carousel .item__container .text-container {
-          margin: 70px 0; } }
+          margin: 35px 0 50px 0; } }
 
 img.bg-image {
   object-fit: cover;
@@ -441,7 +444,8 @@ img.bg-image {
   right: 0; }
 
 .footer {
-  background-color: #fcfcfc; }
+  background-color: #fcfcfc;
+  margin-top: 40px; }
   .footer__top {
     padding: 76px 0 50px; }
   .footer__bottom {
@@ -490,11 +494,29 @@ img.bg-image {
     @media only screen and (min-width: 85em) {
       .jumbotron__content {
         margin-left: 45px;
-        margin-top: 220px;
+        margin-top: 19%;
         padding: 46px;
-        height: 293px; } }
+        padding: 30px 46px 30px 46px;
+        height: 253px; } }
+    .jumbotron__content h1 {
+      margin-top: 10px; }
     .jumbotron__content p {
-      margin-top: 40px;
+      margin-top: 20px;
+      padding-left: 20px;
+      border-left: 2px solid #60ad5f; }
+  .jumbotron__content--us {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 68px 10px 42px 18px;
+    max-width: 484px;
+    margin-left: 35px; }
+    @media only screen and (min-width: 85em) {
+      .jumbotron__content--us {
+        margin-left: 45px;
+        margin-top: 310px;
+        padding: 35px 46px 30px 46px;
+        height: 203px; } }
+    .jumbotron__content--us p {
+      margin-top: 25px;
       padding-left: 20px;
       border-left: 2px solid #60ad5f; }
   .jumbotron__content--short {
@@ -523,8 +545,14 @@ img.bg-image {
         padding: 60px 214px; } }
     .jumbotron__products h2 {
       margin-top: 50px; }
+      @media only screen and (min-width: 85em) {
+        .jumbotron__products h2 {
+          letter-spacing: 1.7px; } }
     .jumbotron__products p {
       margin-top: 30px; }
+    @media only screen and (min-width: 85em) {
+      .jumbotron__products--category img {
+        margin-top: -10px; } }
 
 .cards {
   margin-bottom: 46px;
@@ -545,6 +573,19 @@ img.bg-image {
     padding: 54px; }
     .cards .card ul {
       list-style-image: url("/dist/svg/check.svg"); }
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 0; }
+  .card-header button {
+    background-color: #fff;
+    border: none;
+    font: 400 1.6rem "Roboto", sans-serif;
+    color: #60ad5f; }
+
+.card-body {
+  font: 400 14px/1.7 "Raleway", sans-serif;
+  color: #42464b; }
 
 .contact h2 {
   margin-top: 50px; }
@@ -589,7 +630,8 @@ img.bg-image {
   background: #ffffff;
   box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
   border-radius: 15px;
-  padding: 29px; }
+  padding: 29px;
+  margin-top: 47px; }
   .products .product-card-image img {
     height: 234px; }
   .products .product-card .btn--section {
@@ -679,8 +721,25 @@ p.paragraph {
 .product-category-description {
   font: 400 1.6rem/2 "Raleway", sans-serif;
   color: #42464b;
-  letter-spacing: 0.16px;
-  margin-bottom: 57px; }
+  letter-spacing: 0.16px; }
+  .product-category-description span {
+    font-weight: 700; }
+
+.article-heading {
+  font: 700 1.4rem "Roboto", sans-serif;
+  color: #60ad5f;
+  text-transform: uppercase;
+  margin: 30px 0; }
+
+.article-question {
+  font: 700 2.4rem "Roboto", sans-serif;
+  color: #42464b;
+  margin: 45px 0; }
+
+p.article--summary {
+  font: 400 1.8rem "Raleway", sans-serif;
+  color: #60ad5f;
+  margin-top: 40px; }
 
 .cards .card ul li {
   font: 400 1.4rem/2 "Raleway", sans-serif;
@@ -942,6 +1001,8 @@ button.btn-form {
 .info__content--text {
   font: 400 1.3rem/2 "Raleway", sans-serif;
   color: #42464b; }
+  .info__content--text span {
+    font-weight: 700; }
   @media only screen and (min-width: 85em) {
     .info__content--text {
       font-size: 1.5rem; } }
@@ -953,13 +1014,6 @@ button.btn-form {
     .process h2 {
       font-size: 2.6rem; } }
 
-.process p {
-  font: 400 1.3rem/2 "Raleway", sans-serif;
-  color: #42464b; }
-  @media only screen and (min-width: 85em) {
-    .process p {
-      font-size: 1.5rem; } }
-
 .benefits h1 {
   font: 700 1.8rem "Roboto", sans-serif;
   color: #42464b; }
@@ -967,6 +1021,8 @@ button.btn-form {
 .benefits p {
   font: 400 1.5rem/2.2 "Raleway", sans-serif;
   color: #fff; }
+  .benefits p span {
+    font-weight: 700; }
   @media only screen and (min-width: 85em) {
     .benefits p {
       font-size: 2rem; } }
@@ -1016,6 +1072,8 @@ button.btn-form {
 .jobs .job--description {
   font: 400 1.4rem/1.9 "Raleway", sans-serif;
   color: #42464b; }
+  .jobs .job--description span {
+    font-weight: 700; }
   @media only screen and (min-width: 85em) {
     .jobs .job--description {
       font-size: 1.6rem; } }
@@ -1066,8 +1124,8 @@ button.btn-form {
   font: 700 1.6rem "Roboto", sans-serif;
   color: #60ad5f;
   text-transform: capitalize;
-  padding-left: 70px;
-  margin-bottom: 47px; }
+  padding-left: 200px;
+  margin-top: 47px; }
 
 .product-card--category {
   font: 700 1.3rem "Roboto", sans-serif;
@@ -1081,7 +1139,8 @@ button.btn-form {
 
 .product-card--description {
   font: 400 1.5rem/1.7 "Raleway", sans-serif;
-  color: #9b9b9b; }
+  color: #9b9b9b;
+  text-align: justify; }
 
 @media only screen and (min-width: 56.25em) {
   .motto {
@@ -1228,9 +1287,14 @@ button.btn-form {
       .info p.secondary-paragraph {
         margin-bottom: 109px; } }
   .info__content hr {
-    border-top: 1px solid #60ad5f;
-    width: 100px;
-    margin-bottom: 26px; }
+    border-bottom: 1.5px solid #60ad5f;
+    max-width: 30%;
+    margin-bottom: 26px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align: left;
+    margin-left: 0; }
   .info__content--heading {
     margin-top: 20px; }
   .info__content--text {
@@ -1313,6 +1377,33 @@ button.btn-form {
 
 .land {
   background-image: url("/dist/img/land-hero.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.cr {
+  background-image: url("/dist/img/heroCR.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.da {
+  background-image: url("/dist/img/heroDA.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+ul.dist-arm {
+  font: 400 1.6rem/2 "Raleway", sans-serif; }
+
+.fp {
+  background-image: url("/dist/img/heroFP.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

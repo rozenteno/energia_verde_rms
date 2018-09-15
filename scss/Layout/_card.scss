@@ -21,3 +21,17 @@
     }
   }
 }
+.card-header {
+  background-color: #fff;
+  border-bottom: 0;
+  button {
+    background-color: #fff;
+    border: none;
+    font: 400 1.6rem $main-font;
+    color: $main-green;
+  }
+}
+.card-body {
+  font: 400 14px/1.7 $secondary-font;
+  color: #42464b;
+}
