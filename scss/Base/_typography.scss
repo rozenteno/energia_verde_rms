@@ -43,11 +43,18 @@ p.paragraph {
   }
 }
 .product-category-description {
-  font: 400 1.6rem/2 $secondary-font;
+  font: 400 1.4rem/2 $secondary-font;
   color: #42464b;
   letter-spacing: 0.16px;
   span {
     font-weight: 700;
+  }
+  @include respond('tab-port') {
+    padding-right: 35px;
+  }
+  @include respond('desktop') {
+    font-size: 1.6rem;
+    padding-right: 0;
   }
   // margin-bottom: 57px;
 }
@@ -123,7 +130,7 @@ ul.navbar-nav {
       &:focus {
         background-color: $nav-dropdown;
       }
-      @include respond('desktop') {
+      @include respond('tab-port') {
         font-size: 10px;
         text-transform: uppercase;
         font-weight: 700;
@@ -177,16 +184,26 @@ ul.navbar-nav {
 }
 .jumbotron__products {
   &--heading {
-    font: 700 2.6rem $main-font;
+    font: 700 1.8rem $main-font;
     color: #9b9b9b;
+    @include respond('tab-port') {
+      font-size: 2.6rem;
+    }
   }
   &--category {
-    font: 700 5rem $main-font;
+    font: 700 2.4rem $main-font;
     color: #42464b;
+    @include respond('tab-port') {
+      font-size: 5rem;
+    }
   }
   p {
-    font: 400 1.8rem $secondary-font;
+    font: 400 1.4rem/1.5 $secondary-font;
     color: #42464b;
+    @include respond('tab-port') {
+      font-size: 1.8rem;
+      line-height: 1.2;
+    }
   }
 }
 
@@ -610,29 +627,46 @@ button.btn-form {
 //------------ PRODUCTS PAGE -----------------
 .products {
   h2.product-subcategory {
-    font: 700 1.6rem $main-font;
+    font: 700 1.4rem $main-font;
     color: $main-green;
     text-transform: capitalize;
-    padding-left: 200px;
+
     // margin-bottom: 47px;
     margin-top: 47px;
+    @include respond('tab-port') {
+      font-size: 1.6rem;
+      padding-left: 100px;
+    }
+    @include respond('desktop') {
+      padding-left: 200px;
+    }
   }
 }
 //------------ PRODUCT CARD -----------------
 .product-card {
   &--category {
-    font: 700 1.3rem $main-font;
+    font: 700 1.1rem $main-font;
     color: $main-green;
     text-transform: uppercase;
-    padding: 13px 30px;
+    padding: 13px 15px;
+    @include respond('desktop') {
+      font-size: 1.3rem;
+      padding: 13px 30px;
+    }
   }
   &--name {
-    font: 700 1.8rem $main-font;
+    font: 700 1.6rem $main-font;
     color: #000;
+    @include respond('desktop') {
+      font-size: 1.8rem;
+    }
   }
   &--description {
-    font: 400 1.5rem/1.7 $secondary-font;
+    font: 400 1.2rem/1.7 $secondary-font;
     color: #9b9b9b;
     text-align: justify;
+    @include respond('desktop') {
+      font-size: 1.5rem;
+    }
   }
 }

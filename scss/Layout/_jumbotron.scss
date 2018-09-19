@@ -78,15 +78,24 @@
   }
   &__products {
     background-color: #f8f8f8;
-    height: 40vh;
+    height: 400px;
     margin-bottom: 67px;
-    @include respond('desktop') {
-      padding: 60px 214px;
+    padding: 60px 20px;
+    @include respond('tab-port') {
+      padding: 60px 80px;
+      height: 45vh;
     }
     h2 {
       margin-top: 50px;
+      margin-bottom: 20px;
       @include respond('desktop') {
         letter-spacing: 1.7px;
+      }
+      img {
+        height: 36px;
+        @include respond('desktop') {
+          height: auto;
+        }
       }
     }
     p {

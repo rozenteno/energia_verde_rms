@@ -1,4 +1,12 @@
 .products {
+  padding: 0 20px;
+  @include respond('tab-port') {
+    margin-right: 60px;
+    padding: 0;
+  }
+  @include respond('desktop') {
+    margin-right: 0;
+  }
   .product-card {
     /* main_menu_bg copy: */
     background: #ffffff;

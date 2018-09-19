@@ -7,9 +7,10 @@ nav.navbar {
     min-height: 75px;
   }
   a.navbar-brand img {
-    height: 50px;
+    height: 40px;
     @include respond('tab-port') {
       margin-left: 5rem;
+      height: 50px;
     }
     @include respond('desktop') {
       margin-left: 9.9rem;
@@ -17,10 +18,11 @@ nav.navbar {
   }
   .navbar-nav {
     @include respond('tab-port') {
-      margin-right: 11rem;
+      // margin-right: 11rem;
+      margin-right: 5rem;
     }
     @include respond('desktop') {
-      margin-right: 9.9rem;
+      margin-right: 11rem;
     }
     li a {
       // height: 60px;
@@ -68,6 +70,10 @@ nav.navbar {
       border-bottom: 1px solid #e6e6dd;
       border-radius: 0;
       // padding-left: 58rem;
+      @include respond('tab-port') {
+        margin-top: 30px;
+        background-color: $nav-dropdown;
+      }
       @include respond('desktop') {
         background-color: $nav-dropdown;
         .container {

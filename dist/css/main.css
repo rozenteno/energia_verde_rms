@@ -49,24 +49,30 @@ button.btn-form {
     background-color: #42464b; }
 
 a.btn-quote {
-  font: 700 2rem "Roboto", sans-serif;
+  font: 700 1.6rem "Roboto", sans-serif;
   color: #60ad5f;
   text-transform: uppercase;
-  border-bottom: 2px solid #60ad5f;
-  transition: all 0.3s; }
-  a.btn-quote:hover {
-    text-decoration: none;
-    color: #427f41;
-    border-bottom: 2px solid #427f41; }
+  border-bottom: 2px solid #60ad5f; }
+  @media only screen and (min-width: 85em) {
+    a.btn-quote {
+      font-size: 2rem;
+      transition: all 0.3s; }
+      a.btn-quote:hover {
+        text-decoration: none;
+        color: #427f41;
+        border-bottom: 2px solid #427f41; } }
 
 a.btn-download {
-  font: 700 2rem "Roboto", sans-serif;
+  font: 700 1.6rem "Roboto", sans-serif;
   color: #758cae;
-  text-transform: capitalize;
-  transition: color 0.3s; }
-  a.btn-download:hover {
-    text-decoration: none;
-    color: #4f6687; }
+  text-transform: capitalize; }
+  @media only screen and (min-width: 85em) {
+    a.btn-download {
+      font-size: 2rem;
+      transition: color 0.3s; }
+      a.btn-download:hover {
+        text-decoration: none;
+        color: #4f6687; } }
 
 nav.navbar {
   height: 6rem;
@@ -77,19 +83,20 @@ nav.navbar {
     nav.navbar {
       min-height: 75px; } }
   nav.navbar a.navbar-brand img {
-    height: 50px; }
+    height: 40px; }
     @media only screen and (min-width: 56.25em) {
       nav.navbar a.navbar-brand img {
-        margin-left: 5rem; } }
+        margin-left: 5rem;
+        height: 50px; } }
     @media only screen and (min-width: 85em) {
       nav.navbar a.navbar-brand img {
         margin-left: 9.9rem; } }
   @media only screen and (min-width: 56.25em) {
     nav.navbar .navbar-nav {
-      margin-right: 11rem; } }
+      margin-right: 5rem; } }
   @media only screen and (min-width: 85em) {
     nav.navbar .navbar-nav {
-      margin-right: 9.9rem; } }
+      margin-right: 11rem; } }
   nav.navbar .navbar-nav li a {
     padding: 20px;
     margin-right: 4.3rem; }
@@ -123,6 +130,10 @@ nav.navbar {
       border: none;
       border-bottom: 1px solid #e6e6dd;
       border-radius: 0; }
+      @media only screen and (min-width: 56.25em) {
+        nav.navbar .navbar-collapse .dropdown-menu {
+          margin-top: 30px;
+          background-color: #f4f4eb; } }
       @media only screen and (min-width: 85em) {
         nav.navbar .navbar-collapse .dropdown-menu {
           background-color: #f4f4eb; }
@@ -538,16 +549,24 @@ img.bg-image {
         height: 100%; } }
   .jumbotron__products {
     background-color: #f8f8f8;
-    height: 40vh;
-    margin-bottom: 67px; }
-    @media only screen and (min-width: 85em) {
+    height: 400px;
+    margin-bottom: 67px;
+    padding: 60px 20px; }
+    @media only screen and (min-width: 56.25em) {
       .jumbotron__products {
-        padding: 60px 214px; } }
+        padding: 60px 80px;
+        height: 45vh; } }
     .jumbotron__products h2 {
-      margin-top: 50px; }
+      margin-top: 50px;
+      margin-bottom: 20px; }
       @media only screen and (min-width: 85em) {
         .jumbotron__products h2 {
           letter-spacing: 1.7px; } }
+      .jumbotron__products h2 img {
+        height: 36px; }
+        @media only screen and (min-width: 85em) {
+          .jumbotron__products h2 img {
+            height: auto; } }
     .jumbotron__products p {
       margin-top: 30px; }
     @media only screen and (min-width: 85em) {
@@ -625,18 +644,27 @@ img.bg-image {
     border-radius: 0;
     resize: none; }
 
-.products .product-card {
-  /* main_menu_bg copy: */
-  background: #ffffff;
-  box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
-  border-radius: 15px;
-  padding: 29px;
-  margin-top: 47px; }
-  .products .product-card-image img {
-    height: 234px; }
-  .products .product-card .btn--section {
-    padding: 28.5px 15px 0;
-    border-top: 1px solid #dddddd; }
+.products {
+  padding: 0 20px; }
+  @media only screen and (min-width: 56.25em) {
+    .products {
+      margin-right: 60px;
+      padding: 0; } }
+  @media only screen and (min-width: 85em) {
+    .products {
+      margin-right: 0; } }
+  .products .product-card {
+    /* main_menu_bg copy: */
+    background: #ffffff;
+    box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
+    border-radius: 15px;
+    padding: 29px;
+    margin-top: 47px; }
+    .products .product-card-image img {
+      height: 234px; }
+    .products .product-card .btn--section {
+      padding: 28.5px 15px 0;
+      border-top: 1px solid #dddddd; }
 
 .vl {
   border-left: 1px solid #1b4079;
@@ -719,11 +747,18 @@ p.paragraph {
       font-size: 18px; } }
 
 .product-category-description {
-  font: 400 1.6rem/2 "Raleway", sans-serif;
+  font: 400 1.4rem/2 "Raleway", sans-serif;
   color: #42464b;
   letter-spacing: 0.16px; }
   .product-category-description span {
     font-weight: 700; }
+  @media only screen and (min-width: 56.25em) {
+    .product-category-description {
+      padding-right: 35px; } }
+  @media only screen and (min-width: 85em) {
+    .product-category-description {
+      font-size: 1.6rem;
+      padding-right: 0; } }
 
 .article-heading {
   font: 700 1.4rem "Roboto", sans-serif;
@@ -776,7 +811,7 @@ ul.navbar-nav {
   font-family: "Roboto", sans-serif; }
   .navbar-collapse .dropdown-menu a.dropdown-item:focus {
     background-color: #f4f4eb; }
-  @media only screen and (min-width: 85em) {
+  @media only screen and (min-width: 56.25em) {
     .navbar-collapse .dropdown-menu a.dropdown-item {
       font-size: 10px;
       text-transform: uppercase;
@@ -816,16 +851,26 @@ ul.navbar-nav {
       font-size: 1.4rem; } }
 
 .jumbotron__products--heading {
-  font: 700 2.6rem "Roboto", sans-serif;
+  font: 700 1.8rem "Roboto", sans-serif;
   color: #9b9b9b; }
+  @media only screen and (min-width: 56.25em) {
+    .jumbotron__products--heading {
+      font-size: 2.6rem; } }
 
 .jumbotron__products--category {
-  font: 700 5rem "Roboto", sans-serif;
+  font: 700 2.4rem "Roboto", sans-serif;
   color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    .jumbotron__products--category {
+      font-size: 5rem; } }
 
 .jumbotron__products p {
-  font: 400 1.8rem "Raleway", sans-serif;
+  font: 400 1.4rem/1.5 "Raleway", sans-serif;
   color: #42464b; }
+  @media only screen and (min-width: 56.25em) {
+    .jumbotron__products p {
+      font-size: 1.8rem;
+      line-height: 1.2; } }
 
 .hero-sidebar {
   font-family: "Roboto", sans-serif;
@@ -1121,26 +1166,42 @@ button.btn-form {
   font: 400 1.6rem "Raleway", sans-serif; }
 
 .products h2.product-subcategory {
-  font: 700 1.6rem "Roboto", sans-serif;
+  font: 700 1.4rem "Roboto", sans-serif;
   color: #60ad5f;
   text-transform: capitalize;
-  padding-left: 200px;
   margin-top: 47px; }
+  @media only screen and (min-width: 56.25em) {
+    .products h2.product-subcategory {
+      font-size: 1.6rem;
+      padding-left: 100px; } }
+  @media only screen and (min-width: 85em) {
+    .products h2.product-subcategory {
+      padding-left: 200px; } }
 
 .product-card--category {
-  font: 700 1.3rem "Roboto", sans-serif;
+  font: 700 1.1rem "Roboto", sans-serif;
   color: #60ad5f;
   text-transform: uppercase;
-  padding: 13px 30px; }
+  padding: 13px 15px; }
+  @media only screen and (min-width: 85em) {
+    .product-card--category {
+      font-size: 1.3rem;
+      padding: 13px 30px; } }
 
 .product-card--name {
-  font: 700 1.8rem "Roboto", sans-serif;
+  font: 700 1.6rem "Roboto", sans-serif;
   color: #000; }
+  @media only screen and (min-width: 85em) {
+    .product-card--name {
+      font-size: 1.8rem; } }
 
 .product-card--description {
-  font: 400 1.5rem/1.7 "Raleway", sans-serif;
+  font: 400 1.2rem/1.7 "Raleway", sans-serif;
   color: #9b9b9b;
   text-align: justify; }
+  @media only screen and (min-width: 85em) {
+    .product-card--description {
+      font-size: 1.5rem; } }
 
 @media only screen and (min-width: 56.25em) {
   .motto {

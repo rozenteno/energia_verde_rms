@@ -38,24 +38,32 @@ button.btn-form {
   }
 }
 a.btn-quote {
-  font: 700 2rem $main-font;
+  font: 700 1.6rem $main-font;
   color: $main-green;
   text-transform: uppercase;
   border-bottom: 2px solid $main-green;
-  transition: all 0.3s;
-  &:hover {
-    text-decoration: none;
-    color: darken($main-green, 15%);
-    border-bottom: 2px solid darken($main-green, 15%);
+
+  @include respond('desktop') {
+    font-size: 2rem;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: darken($main-green, 15%);
+      border-bottom: 2px solid darken($main-green, 15%);
+    }
   }
 }
 a.btn-download {
-  font: 700 2rem $main-font;
+  font: 700 1.6rem $main-font;
   color: #758cae;
   text-transform: capitalize;
-  transition: color 0.3s;
-  &:hover {
-    text-decoration: none;
-    color: darken(#758cae, 15%);
+
+  @include respond('desktop') {
+    font-size: 2rem;
+    transition: color 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: darken(#758cae, 15%);
+    }
   }
 }
